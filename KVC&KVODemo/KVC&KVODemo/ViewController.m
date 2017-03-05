@@ -57,7 +57,10 @@ static void *child2Context = &child2Context;
     [self.child1 addObserver:self forKeyPath:@"age" options:NSKeyValueObservingOptionNew | NSKeyValueObservingOptionOld context:child1Context];
     
     // 添加观察者后改变值 验证是否可以观察到值变化
+    [self.child1 willChangeValueForKey:@"firstName"];
     [self.child1 setValue:@"Tiffany" forKey:@"firstName"];
+    [self.child1 didChangeValueForKey:@"firstName"];
+    
     [self.child1 setValue:[NSNumber numberWithUnsignedInteger:23] forKey:@"age"];
     
     // 观察child2属性变化 设值

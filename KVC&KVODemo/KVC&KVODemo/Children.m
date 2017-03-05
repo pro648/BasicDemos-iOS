@@ -34,4 +34,16 @@
     return [NSSet setWithObjects:@"firstName",@"lastName", nil];
 }
 
++ (BOOL)automaticallyNotifiesObserversForKey:(NSString *)key
+{
+    BOOL automatic = NO;
+    if ([key isEqualToString:@"firstName"])
+    {
+        automatic = NO;
+    } else {
+        automatic = [super automaticallyNotifiesObserversForKey:key];
+    }
+    return automatic;
+}
+
 @end
