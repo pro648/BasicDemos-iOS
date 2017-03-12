@@ -67,7 +67,7 @@
     [alertController addAction:okAction];           // A
     [alertController addAction:resetAction];        // C
     
-    // 3.呈现`UIAlertContorller`
+    // 3.呈现UIAlertContorller
     [self presentViewController:alertController animated:YES completion:nil];
 }
 
@@ -82,13 +82,13 @@
     [alertController addTextFieldWithConfigurationHandler:^(UITextField * _Nonnull textField) {
         textField.placeholder = @"username";
         
-        [textField addTarget:self action:@selector(alertUserNameDidChange:) forControlEvents:UIControlEventEditingChanged];     // 添加响应事件
+        [textField addTarget:self action:@selector(alertUserAccountInfDidChange:) forControlEvents:UIControlEventEditingChanged];     // 添加响应事件
     }];
     [alertController addTextFieldWithConfigurationHandler:^(UITextField * _Nonnull textField) {
         textField.placeholder = @"password";
         textField.secureTextEntry = YES;
         
-        [textField addTarget:self action:@selector(alertPasswordDidChange:) forControlEvents:UIControlEventEditingChanged];     // 添加响应事件
+        [textField addTarget:self action:@selector(alertUserAccountInfDidChange:) forControlEvents:UIControlEventEditingChanged];     // 添加响应事件
     }];
     
     // 2.2  创建Cancel Login按钮
@@ -147,7 +147,7 @@
 #pragma mark -
 #pragma mark IBAction
 
-- (void)alertUserNameDidChange:(UITextField *)sender
+- (void)alertUserAccountInfDidChange:(UITextField *)sender
 {
     UIAlertController *alertController = (UIAlertController *)self.presentedViewController;
     
@@ -155,19 +155,11 @@
     {
         UITextField *userName = alertController.textFields.firstObject;
         UIAlertAction *loginAction = alertController.actions.lastObject;
-        loginAction.enabled = userName.text.length > 3;     // 用户名必须大于三位
-    }
-}
-
-- (void)alertPasswordDidChange:(UITextField *)sender
-{
-    UIAlertController *alertController = (UIAlertController *)self.presentedViewController;
-    
-    if (alertController)
-    {
         UITextField *password = alertController.textFields.lastObject;
-        UIAlertAction *loginAction = alertController.actions.lastObject;
-        loginAction.enabled = password.text.length > 6;     // 密码必须大于六位
+        if (userName.text.length>3 && password.text.length > 6)     // 用户名必须大于三位 密码必须大于六位
+        {
+            loginAction.enabled = YES;
+        }
     }
 }
 
