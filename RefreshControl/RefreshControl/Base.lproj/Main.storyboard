@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="9dy-qg-of4">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Refresh Control-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ElZ-ba-634">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Good things come to those who wait." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yCu-AX-x1C">
+                                        <rect key="frame" x="5" y="301" width="365" height="64"/>
+                                        <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="64" id="KOc-cA-CRa"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="pro648" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bae-kl-TFB">
+                                        <rect key="frame" x="8" y="101" width="359" height="64"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="64" id="0lJ-go-AA7"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name=".SFNSDisplay" family=".SF NS Display" pointSize="22"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="bae-kl-TFB" firstAttribute="trailing" secondItem="ElZ-ba-634" secondAttribute="trailingMargin" id="3hQ-TG-dgl"/>
+                                    <constraint firstItem="bae-kl-TFB" firstAttribute="top" secondItem="ElZ-ba-634" secondAttribute="top" constant="165" id="HyW-gD-7uI"/>
+                                    <constraint firstItem="bae-kl-TFB" firstAttribute="centerX" secondItem="yCu-AX-x1C" secondAttribute="centerX" id="Kl1-Kp-WzE"/>
+                                    <constraint firstItem="bae-kl-TFB" firstAttribute="leading" secondItem="ElZ-ba-634" secondAttribute="leadingMargin" id="Md8-V5-P2a"/>
+                                    <constraint firstItem="yCu-AX-x1C" firstAttribute="top" secondItem="ElZ-ba-634" secondAttribute="top" constant="365" id="eem-si-CZX"/>
+                                    <constraint firstItem="yCu-AX-x1C" firstAttribute="leading" secondItem="ElZ-ba-634" secondAttribute="leading" constant="5" id="iiq-EH-XPi"/>
+                                    <constraint firstItem="bae-kl-TFB" firstAttribute="centerX" secondItem="ElZ-ba-634" secondAttribute="centerX" id="m3X-yp-nnA"/>
+                                    <constraint firstAttribute="bottom" secondItem="yCu-AX-x1C" secondAttribute="bottom" constant="238" id="wKa-8G-wTX"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="ElZ-ba-634" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Lwa-So-h4d"/>
+                            <constraint firstItem="ElZ-ba-634" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="W6g-Yi-gp1"/>
+                            <constraint firstAttribute="trailing" secondItem="ElZ-ba-634" secondAttribute="trailing" id="b7W-Q4-Vx6"/>
+                            <constraint firstItem="ElZ-ba-634" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="d6m-7w-wds"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Refresh Control" id="lVp-gK-1Uq"/>
+                    <connections>
+                        <outlet property="scrollView" destination="ElZ-ba-634" id="FRF-0z-5YI"/>
+                        <outlet property="secondLabel" destination="yCu-AX-x1C" id="SVv-5C-NF2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="847" y="123"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="hT5-aN-sx9">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="9dy-qg-of4" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="X4P-2J-vzO">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="joY-7k-eFR"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="64c-lX-Gnr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="122.78860569715144"/>
+        </scene>
+    </scenes>
+</document>
