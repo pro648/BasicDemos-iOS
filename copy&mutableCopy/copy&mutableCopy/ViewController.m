@@ -35,6 +35,9 @@
     
     // 6.自定义类的复制
     [self copyCustomClass];
+    
+    // 7.更改指针指向地址
+    [self pointToAnotherMemoryAddress];
 }
 
 // 1.非容器类 不可变对象
@@ -150,6 +153,20 @@
     Person *personCopy = [person copy];
     [personCopy setName:@"B" withAge:2];
     // 断点位置
+}
+
+// 7.更改指针指向地址
+- (void)pointToAnotherMemoryAddress {
+    // 1.指针a、b同时指向字符串pro
+    NSString *a = @"pro";
+    NSString *b = a;
+    NSLog(@"Memory location of \n a = %p, \n b = %p", a, b);
+    // 断点1位置
+    
+    // 2.指针a指向字符串pro648
+    a = @"pro648";
+    NSLog(@"Memory location of \n a = %p, \n b = %p", a, b);
+    // 断点2位置
 }
 
 - (void)didReceiveMemoryWarning {
