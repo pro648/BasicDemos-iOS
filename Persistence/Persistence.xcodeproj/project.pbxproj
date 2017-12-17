@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3A407C1A1FE6CDDB001034A9 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 3A407C191FE6CDDB001034A9 /* README.md */; };
 		603983A61DE0335D00723040 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 603983A51DE0335D00723040 /* main.m */; };
 		603983A91DE0335D00723040 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 603983A81DE0335D00723040 /* AppDelegate.m */; };
 		603983AC1DE0335D00723040 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 603983AB1DE0335D00723040 /* ViewController.m */; };
@@ -27,6 +28,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3A407C191FE6CDDB001034A9 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		603983A11DE0335D00723040 /* Persistence.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Persistence.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		603983A51DE0335D00723040 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		603983A71DE0335D00723040 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -63,6 +65,7 @@
 		603983981DE0335D00723040 = {
 			isa = PBXGroup;
 			children = (
+				3A407C191FE6CDDB001034A9 /* README.md */,
 				603983A31DE0335D00723040 /* Persistence */,
 				603983BD1DE0335D00723040 /* PersistenceTests */,
 				603983A21DE0335D00723040 /* Products */,
@@ -159,6 +162,7 @@
 				TargetAttributes = {
 					603983A01DE0335D00723040 = {
 						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = 75QX6C4CX4;
 						ProvisioningStyle = Automatic;
 					};
 					603983B91DE0335D00723040 = {
@@ -194,6 +198,7 @@
 			files = (
 				603983B41DE0335D00723040 /* LaunchScreen.storyboard in Resources */,
 				603983B11DE0335D00723040 /* Assets.xcassets in Resources */,
+				3A407C1A1FE6CDDB001034A9 /* README.md in Resources */,
 				603983AF1DE0335D00723040 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -350,6 +355,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 75QX6C4CX4;
 				INFOPLIST_FILE = Persistence/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.Persistence;
@@ -361,6 +367,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 75QX6C4CX4;
 				INFOPLIST_FILE = Persistence/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.Persistence;
@@ -411,6 +418,7 @@
 				603983C51DE0335D00723040 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		603983C61DE0335D00723040 /* Build configuration list for PBXNativeTarget "PersistenceTests" */ = {
 			isa = XCConfigurationList;
@@ -419,6 +427,7 @@
 				603983C81DE0335D00723040 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
