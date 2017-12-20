@@ -39,10 +39,23 @@ extern NSString *NotificationFromThirdVC;
     self.title = @"第二页";
     
     // 添加观察者
-    [[NSNotificationCenter defaultCenter] addObserver:self
-                                             selector:@selector(didReceiveNotificationMessage:)
-                                                 name:NotificationFromThirdVC
-                                               object:nil];
+    [[NSNotificationCenter defaultCenter] addObserverForName:NotificationFromThirdVC
+                                                      object:nil
+                                                       queue:nil
+                                                  usingBlock:^(NSNotification * _Nonnull note) {
+          if ([note.name isEqualToString:NotificationFromThirdVC]) {
+              // 把通知传送的字符串显示到notiLabel。
+              NSDictionary *userInfo = [note userInfo];
+              self.notiLabel.text = [userInfo valueForKey:@"TextField"];
+          }
+                                                  }];
+}
+
+- (void)dealloc {
+    // 移除观察者。
+    [[NSNotificationCenter defaultCenter] removeObserver:self
+                                                    name:NotificationFromThirdVC
+                                                  object:nil];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -85,10 +98,10 @@ extern NSString *NotificationFromThirdVC;
 {
     if (! _backButton)
     {
-        _backButton = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 80, 30)];
+        _backButton = [UIButton buttonWithType:UIButtonTypeSystem];
+        _backButton.frame = CGRectMake(0, 0, 80, 30);
         _backButton.center = CGPointMake(self.view.center.x - 60, self.view.center.y + 50);
         [_backButton setTitle:@"回首页" forState:UIControlStateNormal];
-        [_backButton setTitleColor:[UIColor colorWithRed:0 green:122/255 blue:1 alpha:1] forState:UIControlStateNormal];
         [_backButton addTarget:self action:@selector(backToVC:) forControlEvents:UIControlEventTouchUpInside];
     }
     
@@ -99,10 +112,10 @@ extern NSString *NotificationFromThirdVC;
 {
     if (! _nextButton)
     {
-        _nextButton = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 80, 30)];
+        _nextButton = [UIButton buttonWithType:UIButtonTypeSystem];
+        _nextButton.frame = CGRectMake(0, 0, 80, 30);
         _nextButton.center = CGPointMake(self.view.center.x + 60, self.view.center.y + 50);
         [_nextButton setTitle:@"下一页" forState:UIControlStateNormal];
-        [_nextButton setTitleColor:[UIColor colorWithRed:0 green:122/255 blue:1 alpha:1] forState:UIControlStateNormal];
         [_nextButton addTarget:self action:@selector(goToThirdVC:) forControlEvents:UIControlEventTouchUpInside];
     }
     
@@ -133,17 +146,6 @@ extern NSString *NotificationFromThirdVC;
     // 跳转到ThirdViewController
     ThirdViewController *thirdVC = [[ThirdViewController alloc] init];
     [self.navigationController pushViewController:thirdVC animated:YES];
-}
-
-- (void)didReceiveNotificationMessage:(NSNotification *)notification
-{
-    if ([[notification name] isEqualToString:NotificationFromThirdVC])
-    {
-        // 把通知传送的字符串显示到notiLabel
-        NSDictionary *dict = [notification userInfo];
-        NSString *string = [dict objectForKey:@"TextField"];
-        self.notiLabel.text = string;
-    }
 }
 
 @end

@@ -77,10 +77,10 @@
 {
     if (! _backButton)
     {
-        _backButton = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 80, 30)];
+        _backButton = [UIButton buttonWithType:UIButtonTypeSystem];
+        _backButton.bounds = CGRectMake(0, 0, 80, 30);
         _backButton.center = CGPointMake(self.view.center.x - 60, self.view.center.y + 50);
         [_backButton setTitle:@"回首页" forState:UIControlStateNormal];
-        [_backButton setTitleColor:[UIColor colorWithRed:0 green:122/255 blue:1 alpha:1] forState:UIControlStateNormal];
         [_backButton addTarget:self action:@selector(backToVC:) forControlEvents:UIControlEventTouchUpInside];
     }
     
@@ -91,10 +91,10 @@
 {
     if (! _nextButton)
     {
-        _nextButton = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 80, 30)];
+        _nextButton = [UIButton buttonWithType:UIButtonTypeSystem];
+        _nextButton.bounds = CGRectMake(0, 0, 80, 30);
         _nextButton.center = CGPointMake(self.view.center.x + 60, self.view.center.y + 50);
         [_nextButton setTitle:@"下一页" forState:UIControlStateNormal];
-        [_nextButton setTitleColor:[UIColor colorWithRed:0 green:122/255 blue:1 alpha:1] forState:UIControlStateNormal];
         [_nextButton addTarget:self action:@selector(goToThirdVC:) forControlEvents:UIControlEventTouchUpInside];
     }
     

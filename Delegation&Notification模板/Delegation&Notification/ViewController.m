@@ -72,10 +72,10 @@
 {
     if (! _button)
     {
-        _button = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 80, 30)];
+        _button = [UIButton buttonWithType:UIButtonTypeSystem];
+        _button.bounds = CGRectMake(0, 0, 80, 30);
         _button.center = CGPointMake(self.view.center.x, self.view.center.y + 50);
         [_button setTitle:@"下一页" forState:UIControlStateNormal];
-        [_button setTitleColor:[UIColor colorWithRed:0 green:122/255 blue:1 alpha:1] forState:UIControlStateNormal];
         [_button addTarget:self action:@selector(goToSecondVC:) forControlEvents:UIControlEventTouchUpInside];
     }
     

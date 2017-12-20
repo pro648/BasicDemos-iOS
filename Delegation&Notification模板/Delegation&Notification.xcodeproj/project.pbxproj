@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3AEFE9CF1FEA54C4000939F1 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 3AEFE9CE1FEA54C4000939F1 /* README.md */; };
 		60D65CA11E598E9B001C72B6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 60D65CA01E598E9B001C72B6 /* main.m */; };
 		60D65CA41E598E9B001C72B6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 60D65CA31E598E9B001C72B6 /* AppDelegate.m */; };
 		60D65CA71E598E9B001C72B6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 60D65CA61E598E9B001C72B6 /* ViewController.m */; };
@@ -29,6 +30,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3AEFE9CE1FEA54C4000939F1 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		60D65C9C1E598E9A001C72B6 /* Delegation&Notification.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Delegation&Notification.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		60D65CA01E598E9B001C72B6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		60D65CA21E598E9B001C72B6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -69,6 +71,7 @@
 		60D65C931E598E9A001C72B6 = {
 			isa = PBXGroup;
 			children = (
+				3AEFE9CE1FEA54C4000939F1 /* README.md */,
 				60D65C9E1E598E9B001C72B6 /* Delegation&Notification */,
 				60D65CB81E598E9C001C72B6 /* Delegation&NotificationTests */,
 				60D65C9D1E598E9A001C72B6 /* Products */,
@@ -204,6 +207,7 @@
 			files = (
 				60D65CAF1E598E9C001C72B6 /* LaunchScreen.storyboard in Resources */,
 				60D65CAC1E598E9B001C72B6 /* Assets.xcassets in Resources */,
+				3AEFE9CF1FEA54C4000939F1 /* README.md in Resources */,
 				60D65CAA1E598E9B001C72B6 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -423,6 +427,7 @@
 				60D65CC01E598E9C001C72B6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		60D65CC11E598E9C001C72B6 /* Build configuration list for PBXNativeTarget "Delegation&NotificationTests" */ = {
 			isa = XCConfigurationList;
@@ -431,6 +436,7 @@
 				60D65CC31E598E9C001C72B6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

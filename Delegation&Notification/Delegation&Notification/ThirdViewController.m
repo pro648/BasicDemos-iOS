@@ -61,10 +61,10 @@ NSString *NotificationFromThirdVC = @"NotificationFromThirdVCTextField";
 {
     if (! _backButton)
     {
-        _backButton = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 80, 30)];
+        _backButton = [UIButton buttonWithType:UIButtonTypeSystem];
+        _backButton.frame = CGRectMake(0, 0, 80, 30);
         _backButton.center = CGPointMake(self.view.center.x, self.view.center.y + 25);
         [_backButton setTitle:@"上一页" forState:UIControlStateNormal];
-        [_backButton setTitleColor:[UIColor colorWithRed:0 green:122/255 blue:1 alpha:1] forState:UIControlStateNormal];
         [_backButton addTarget:self action:@selector(backToSecVC:) forControlEvents:UIControlEventTouchUpInside];
     }
     
