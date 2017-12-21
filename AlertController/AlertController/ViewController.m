@@ -82,13 +82,13 @@
     [alertController addTextFieldWithConfigurationHandler:^(UITextField * _Nonnull textField) {
         textField.placeholder = @"username";
         
-        [textField addTarget:self action:@selector(alertUserAccountInfDidChange:) forControlEvents:UIControlEventEditingChanged];     // 添加响应事件
+        [textField addTarget:self action:@selector(alertUserAccountInfoDidChange:) forControlEvents:UIControlEventEditingChanged];     // 添加响应事件
     }];
     [alertController addTextFieldWithConfigurationHandler:^(UITextField * _Nonnull textField) {
         textField.placeholder = @"password";
         textField.secureTextEntry = YES;
         
-        [textField addTarget:self action:@selector(alertUserAccountInfDidChange:) forControlEvents:UIControlEventEditingChanged];     // 添加响应事件
+        [textField addTarget:self action:@selector(alertUserAccountInfoDidChange:) forControlEvents:UIControlEventEditingChanged];     // 添加响应事件
     }];
     
     // 2.2  创建Cancel Login按钮
@@ -147,19 +147,22 @@
 #pragma mark -
 #pragma mark IBAction
 
-- (void)alertUserAccountInfDidChange:(UITextField *)sender
+- (void)alertUserAccountInfoDidChange:(UITextField *)sender
 {
     UIAlertController *alertController = (UIAlertController *)self.presentedViewController;
     
     if (alertController)
     {
-        UITextField *userName = alertController.textFields.firstObject;
+        NSString *userName = alertController.textFields.firstObject.text;
+        NSString *password = alertController.textFields.lastObject.text;
         UIAlertAction *loginAction = alertController.actions.lastObject;
-        UITextField *password = alertController.textFields.lastObject;
-        if (userName.text.length>3 && password.text.length > 6)     // 用户名必须大于三位 密码必须大于六位
-        {
+        
+        if (userName.length > 3 && password.length > 6)
+            // 用户名大于3位，密码大于6位时，启用Login按钮。
             loginAction.enabled = YES;
-        }
+        else
+            // 用户名小于等于3位，密码小于等于6位，禁用Login按钮。
+            loginAction.enabled = NO;
     }
 }
 

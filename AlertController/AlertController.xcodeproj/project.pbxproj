@@ -40,6 +40,7 @@
 		6087CE5A1E72D7B0009D80F1 /* AlertControllerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AlertControllerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6087CE5E1E72D7B0009D80F1 /* AlertControllerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AlertControllerTests.m; sourceTree = "<group>"; };
 		6087CE601E72D7B0009D80F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		608AE5C91FEBE28C00A7124E /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +64,7 @@
 		6087CE381E72D7AD009D80F1 = {
 			isa = PBXGroup;
 			children = (
+				608AE5C91FEBE28C00A7124E /* README.md */,
 				6087CE431E72D7AE009D80F1 /* AlertController */,
 				6087CE5D1E72D7B0009D80F1 /* AlertControllerTests */,
 				6087CE421E72D7AD009D80F1 /* Products */,
@@ -411,6 +413,7 @@
 				6087CE651E72D7B0009D80F1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6087CE661E72D7B0009D80F1 /* Build configuration list for PBXNativeTarget "AlertControllerTests" */ = {
 			isa = XCConfigurationList;
@@ -419,6 +422,7 @@
 				6087CE681E72D7B0009D80F1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
