@@ -15,7 +15,7 @@
     self = [super init];
     if (self)
     {
-        self.array = [NSMutableArray new];
+        _array = [NSMutableArray new];
     }
     
     return self;

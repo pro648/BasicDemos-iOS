@@ -15,10 +15,10 @@
     self = [super init];
     if (self)
     {
-        self.firstName = @"";
-        self.age = 0;
-        self.lastName = @"";
-        self.cousins = [KVCMutableArray new];
+        _firstName = @"";
+        _age = 0;
+        _lastName = @"";
+        _cousins = [KVCMutableArray new];
     }
     
     return self;

@@ -46,6 +46,7 @@
 		604A38111E6700C3003170F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		604A381A1E671816003170F5 /* Children.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Children.h; sourceTree = "<group>"; };
 		604A381B1E671816003170F5 /* Children.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Children.m; sourceTree = "<group>"; };
+		608AE5681FEB958800A7124E /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +70,7 @@
 		604A37E91E6700BD003170F5 = {
 			isa = PBXGroup;
 			children = (
+				608AE5681FEB958800A7124E /* README.md */,
 				604A37F41E6700BD003170F5 /* KVC&KVODemo */,
 				604A380E1E6700C3003170F5 /* KVC&KVODemoTests */,
 				604A37F31E6700BD003170F5 /* Products */,
