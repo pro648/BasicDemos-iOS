@@ -6,4 +6,4 @@
 
 详细介绍查看下面文章：
 
-<https://github.com/pro648/tips/wiki/%E5%A7%94%E6%89%98%E3%80%81%E9%80%9A%E7%9F%A5%E4%BC%A0%E5%80%BC%E7%9A%84%E7%94%A8%E6%B3%95%E4%B8%8E%E5%8C%BA%E5%88%AB>
+<https://github.com/pro648/tips/wiki/委托、通知传值的用法与区别>
