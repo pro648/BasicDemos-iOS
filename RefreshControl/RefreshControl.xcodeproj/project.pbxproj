@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		601B31781FEE4FEF007CEEFC /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 601B31771FEE4FEF007CEEFC /* README.md */; };
 		60FC300E1E89020800D26A9D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 60FC300D1E89020800D26A9D /* main.m */; };
 		60FC30111E89020800D26A9D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 60FC30101E89020800D26A9D /* AppDelegate.m */; };
 		60FC30141E89020800D26A9D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 60FC30131E89020800D26A9D /* ViewController.m */; };
@@ -27,6 +28,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		601B31771FEE4FEF007CEEFC /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		60FC30091E89020800D26A9D /* RefreshControl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RefreshControl.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		60FC300D1E89020800D26A9D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		60FC300F1E89020800D26A9D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -63,6 +65,7 @@
 		60FC30001E89020800D26A9D = {
 			isa = PBXGroup;
 			children = (
+				601B31771FEE4FEF007CEEFC /* README.md */,
 				60FC300B1E89020800D26A9D /* RefreshControl */,
 				60FC30251E89020900D26A9D /* RefreshControlTests */,
 				60FC300A1E89020800D26A9D /* Products */,
@@ -194,6 +197,7 @@
 			files = (
 				60FC301C1E89020800D26A9D /* LaunchScreen.storyboard in Resources */,
 				60FC30191E89020800D26A9D /* Assets.xcassets in Resources */,
+				601B31781FEE4FEF007CEEFC /* README.md in Resources */,
 				60FC30171E89020800D26A9D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -411,6 +415,7 @@
 				60FC302D1E89020900D26A9D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		60FC302E1E89020900D26A9D /* Build configuration list for PBXNativeTarget "RefreshControlTests" */ = {
 			isa = XCConfigurationList;
@@ -419,6 +424,7 @@
 				60FC30301E89020900D26A9D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
