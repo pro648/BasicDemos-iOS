@@ -15,6 +15,7 @@
 		6002965E1ED95EAF00F57A86 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6002965C1ED95EAF00F57A86 /* LaunchScreen.storyboard */; };
 		600296691ED95EAF00F57A86 /* RegularExpressionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 600296681ED95EAF00F57A86 /* RegularExpressionTests.m */; };
 		600296751ED96ED900F57A86 /* SearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 600296741ED96ED900F57A86 /* SearchViewController.m */; };
+		6023D2D41FF1377D00E9AA6C /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 6023D2D31FF1377D00E9AA6C /* README.md */; };
 		60E4F8851EDACD8800F94C16 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 60E4F8841EDACD8800F94C16 /* SecondViewController.m */; };
 		60E4F8881EDACD9B00F94C16 /* ThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 60E4F8871EDACD9B00F94C16 /* ThirdViewController.m */; };
 /* End PBXBuildFile section */
@@ -45,6 +46,7 @@
 		6002966A1ED95EAF00F57A86 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		600296731ED96ED900F57A86 /* SearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchViewController.h; sourceTree = "<group>"; };
 		600296741ED96ED900F57A86 /* SearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchViewController.m; sourceTree = "<group>"; };
+		6023D2D31FF1377D00E9AA6C /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		60E4F8831EDACD8800F94C16 /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
 		60E4F8841EDACD8800F94C16 /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 		60E4F8861EDACD9B00F94C16 /* ThirdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThirdViewController.h; sourceTree = "<group>"; };
@@ -72,6 +74,7 @@
 		6002963F1ED95EAF00F57A86 = {
 			isa = PBXGroup;
 			children = (
+				6023D2D31FF1377D00E9AA6C /* README.md */,
 				6002964A1ED95EAF00F57A86 /* RegularExpression */,
 				600296671ED95EAF00F57A86 /* RegularExpressionTests */,
 				600296491ED95EAF00F57A86 /* Products */,
@@ -209,6 +212,7 @@
 			files = (
 				6002965E1ED95EAF00F57A86 /* LaunchScreen.storyboard in Resources */,
 				6002965B1ED95EAF00F57A86 /* Assets.xcassets in Resources */,
+				6023D2D41FF1377D00E9AA6C /* README.md in Resources */,
 				600296591ED95EAF00F57A86 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

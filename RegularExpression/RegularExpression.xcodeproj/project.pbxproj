@@ -45,6 +45,7 @@
 		6002966A1ED95EAF00F57A86 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		600296731ED96ED900F57A86 /* SearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchViewController.h; sourceTree = "<group>"; };
 		600296741ED96ED900F57A86 /* SearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchViewController.m; sourceTree = "<group>"; };
+		6023D2D01FF134D400E9AA6C /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		60E4F8831EDACD8800F94C16 /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
 		60E4F8841EDACD8800F94C16 /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 		60E4F8861EDACD9B00F94C16 /* ThirdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThirdViewController.h; sourceTree = "<group>"; };
@@ -72,6 +73,7 @@
 		6002963F1ED95EAF00F57A86 = {
 			isa = PBXGroup;
 			children = (
+				6023D2D01FF134D400E9AA6C /* README.md */,
 				6002964A1ED95EAF00F57A86 /* RegularExpression */,
 				600296671ED95EAF00F57A86 /* RegularExpressionTests */,
 				600296491ED95EAF00F57A86 /* Products */,

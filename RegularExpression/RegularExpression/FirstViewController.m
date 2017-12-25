@@ -116,6 +116,14 @@ static NSString * const locationPattern = @"[a-zA-Z]+[,]\\s*([A-Z]{2})";
         [visibleAttributedText addAttribute:NSBackgroundColorAttributeName value:[UIColor yellowColor] range:matchRange];
     }
     
+    // 注释5和6可以合并在一起，如下：
+    /*
+    [regex enumerateMatchesInString:visibleText options:NSMatchingReportCompletion range:visibleTextRange usingBlock:^(NSTextCheckingResult * _Nullable result, NSMatchingFlags flags, BOOL * _Nonnull stop) {
+        NSRange matchRange = result.range;
+        [visibleAttributedText addAttribute:NSBackgroundColorAttributeName value:[UIColor yellowColor] range:matchRange];
+    }];
+     */
+    
     // 7.Replace the range of the attributed string that we just highlighted. First, create a CFRange from the NSRange of the visible range.
     CFRange visibleRange_CF = CFRangeMake(visibleRange.location, visibleRange.length);
     
