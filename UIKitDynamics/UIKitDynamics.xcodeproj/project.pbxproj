@@ -55,6 +55,7 @@
 		60BFE04E1EFBB18C0026923A /* FifthViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FifthViewController.m; sourceTree = "<group>"; };
 		60BFE0501EFBB23A0026923A /* TabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabBarController.h; sourceTree = "<group>"; };
 		60BFE0511EFBB23A0026923A /* TabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabBarController.m; sourceTree = "<group>"; };
+		60CCE3F21FF293A7005A8FCA /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +79,7 @@
 		60BFE0101EFB98950026923A = {
 			isa = PBXGroup;
 			children = (
+				60CCE3F21FF293A7005A8FCA /* README.md */,
 				60BFE01B1EFB98960026923A /* UIKitDynamics */,
 				60BFE0351EFB98960026923A /* UIKitDynamicsTests */,
 				60BFE01A1EFB98960026923A /* Products */,

@@ -110,10 +110,6 @@ static NSString * const reuseIdentifier = @"CellIdentifier";
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:reuseIdentifier forIndexPath:indexPath];
 
-    if (cell==nil) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:reuseIdentifier];
-    }
-
     cell.textLabel.text = [NSString stringWithFormat:@"Option %li",indexPath.row + 1];
     cell.textLabel.textColor = [UIColor lightGrayColor];
     cell.textLabel.font = [UIFont preferredFontForTextStyle:UIFontTextStyleBody];
