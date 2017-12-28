@@ -41,6 +41,7 @@
 		606A146A1F0A898E00A10769 /* ScrollViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScrollViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		606A146E1F0A898E00A10769 /* ScrollViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScrollViewTests.m; sourceTree = "<group>"; };
 		606A14701F0A898E00A10769 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		608A7C171FF522F0000C4ACB /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		609054601F0E338B007DD200 /* PageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PageViewController.h; sourceTree = "<group>"; };
 		609054611F0E338B007DD200 /* PageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PageViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -66,6 +67,7 @@
 		606A14481F0A898E00A10769 = {
 			isa = PBXGroup;
 			children = (
+				608A7C171FF522F0000C4ACB /* README.md */,
 				606A14531F0A898E00A10769 /* ScrollView */,
 				606A146D1F0A898E00A10769 /* ScrollViewTests */,
 				606A14521F0A898E00A10769 /* Products */,
