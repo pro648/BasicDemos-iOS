@@ -27,6 +27,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6016A8CA1FF93EEA006A1F16 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		609126F51E30E86600679292 /* NSURLSession1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NSURLSession1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		609126F91E30E86600679292 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		609126FB1E30E86600679292 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -63,6 +64,7 @@
 		609126EC1E30E86600679292 = {
 			isa = PBXGroup;
 			children = (
+				6016A8CA1FF93EEA006A1F16 /* README.md */,
 				609126F71E30E86600679292 /* NSURLSession1 */,
 				609127111E30E86600679292 /* NSURLSession1Tests */,
 				609126F61E30E86600679292 /* Products */,
@@ -411,6 +413,7 @@
 				609127191E30E86600679292 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6091271A1E30E86600679292 /* Build configuration list for PBXNativeTarget "NSURLSession1Tests" */ = {
 			isa = XCConfigurationList;
@@ -419,6 +422,7 @@
 				6091271C1E30E86600679292 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

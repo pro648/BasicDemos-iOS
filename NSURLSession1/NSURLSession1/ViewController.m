@@ -53,6 +53,12 @@
     [self.downloadTask resume];
 }
 
+- (void)dealloc {
+    // 移除观察者。
+    [self removeObserver:self forKeyPath:@"resumeData"];
+    [self removeObserver:self forKeyPath:@"downloadTask"];
+}
+
 #pragma mark Getters & Setters
 - (NSURLSession *)session
 {
@@ -148,12 +154,16 @@
         dispatch_async(dispatch_get_main_queue(), ^{
             self.resumeButton.hidden = (self.resumeData == nil);
         });
-    } else if ([keyPath isEqualToString:@"downloadTask"])
+    }
+    else if ([keyPath isEqualToString:@"downloadTask"])
     {
         dispatch_async(dispatch_get_main_queue(), ^{
             self.cancelButton.hidden = (self.downloadTask == nil);
         });
     }
+    else
+        // 如果遇到没有观察的属性，将其交由父类处理，父类可能也在观察该属性。
+        [super observeValueForKeyPath:keyPath ofObject:object change:change context:context];
 }
 
 @end
