@@ -1,0 +1,673 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0DEB2C8CB5BA3B218B118B2E0F2CF38B /* Pods-GrandCentralDispatchTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 347DA1DBBEB34FAAB2319B014B0C144A /* Pods-GrandCentralDispatchTests-dummy.m */; };
+		1E7BE5A1EE9845C6DF4D3A43AAC983CA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3313D056F986C3E84F65A52A89244F7 /* Foundation.framework */; };
+		2440E0805FB68F224A1EB0B56360A903 /* ELCAssetCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 442B9174E4309AE2F89AEA7969C7460A /* ELCAssetCell.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		2BF0954583B9BF9A16472DF5D5002268 /* ELCAsset.m in Sources */ = {isa = PBXBuildFile; fileRef = 0773F578FBEE6DB12CDB2B7EA7411157 /* ELCAsset.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		337B13A05886CD80A84935F186A52958 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C561E57D60731D9FB28B491A5DD5F2E /* UIKit.framework */; };
+		39F7C1FAF9A48BC02BB33F9863D7846B /* ELCAlbumPickerController.h in Headers */ = {isa = PBXBuildFile; fileRef = 02EDB39FEECECC8C83CA902C20F849DD /* ELCAlbumPickerController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3AE782BD896640F3BC6C379956F7DD96 /* Pods-GrandCentralDispatch-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 875B2785F4F2ED3BDAF6E2546E2B0DCA /* Pods-GrandCentralDispatch-dummy.m */; };
+		43306AA60C6C9AF84FCDC771F6DC4F1B /* ELCImagePickerController.h in Headers */ = {isa = PBXBuildFile; fileRef = 9933E7FD3F074BD2964AE30E2B643D39 /* ELCImagePickerController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4EBAF2868E7F7CC313502179C86388E9 /* ELCAssetPickerFilterDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 139FF3BCC9EDD85EE3404306D7A10EE5 /* ELCAssetPickerFilterDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		55E6A692A6EAE3E2F58200C3B07229A9 /* ELCAssetTablePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 56CF63CF257C3FE81857DC4CA3F0DA44 /* ELCAssetTablePicker.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		602E530E552BB437A578F91DDE6032F3 /* ELCImagePickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8407CC6237C1FEE2B8A975BB8BF59045 /* ELCImagePickerController.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		8443BF841B4B7C29BAEE176963AA601B /* ELCAssetTablePicker.h in Headers */ = {isa = PBXBuildFile; fileRef = 17EF454A58B681670B0586507D0EE50C /* ELCAssetTablePicker.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		84ACB97A0B7692B9CDBE910342EDC35E /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 131F4AA328FA0C717A3681C5A15ADDBD /* AssetsLibrary.framework */; };
+		9038C92655530313DCC7DBB4B356EDE2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3313D056F986C3E84F65A52A89244F7 /* Foundation.framework */; };
+		BFAC4706DDF693C959B4CD0ED7FFCE94 /* ELCAsset.h in Headers */ = {isa = PBXBuildFile; fileRef = A85E327D6C315DB17738FACEE00CCABD /* ELCAsset.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C82903159FD711CF0122DEF30C5EFB7E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3313D056F986C3E84F65A52A89244F7 /* Foundation.framework */; };
+		D26DD892FF37837529E60E840492B493 /* ELCAssetCell.h in Headers */ = {isa = PBXBuildFile; fileRef = D62DB94780FC58F8C2B9799CED516B82 /* ELCAssetCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F4B35711078C164BBD1F2270CF762B1B /* ELCAssetSelectionDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 37B3481076E20B9F345D973FD2AFC41B /* ELCAssetSelectionDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FA644FFB3F07DBC9F35DE2F9E4150793 /* ELCImagePickerController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B69376AF1076BB56EE0F404E5E6E7D6 /* ELCImagePickerController-dummy.m */; };
+		FB0A89A63B25620E747D2BE393DAE1BE /* ELCAlbumPickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 462008DBFFB55FF3C4E32C9F0F5A15A2 /* ELCAlbumPickerController.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		FB2E6E691F6C3568B0D8D91432072E10 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AC2501275FE5CAC51259C95A5C47621 /* CoreLocation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		16342CD17C00C85C151A0DC16F30408B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7DF68AF3B6BEB785886D7CF10706AA75;
+			remoteInfo = ELCImagePickerController;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		02EDB39FEECECC8C83CA902C20F849DD /* ELCAlbumPickerController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ELCAlbumPickerController.h; path = Classes/ELCImagePicker/ELCAlbumPickerController.h; sourceTree = "<group>"; };
+		0773F578FBEE6DB12CDB2B7EA7411157 /* ELCAsset.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ELCAsset.m; path = Classes/ELCImagePicker/ELCAsset.m; sourceTree = "<group>"; };
+		131F4AA328FA0C717A3681C5A15ADDBD /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/AssetsLibrary.framework; sourceTree = DEVELOPER_DIR; };
+		139FF3BCC9EDD85EE3404306D7A10EE5 /* ELCAssetPickerFilterDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ELCAssetPickerFilterDelegate.h; path = Classes/ELCImagePicker/ELCAssetPickerFilterDelegate.h; sourceTree = "<group>"; };
+		17EF454A58B681670B0586507D0EE50C /* ELCAssetTablePicker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ELCAssetTablePicker.h; path = Classes/ELCImagePicker/ELCAssetTablePicker.h; sourceTree = "<group>"; };
+		1EECFC1AD891AABDC25F56036662883C /* libELCImagePickerController.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libELCImagePickerController.a; path = libELCImagePickerController.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		2AC2501275FE5CAC51259C95A5C47621 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/CoreLocation.framework; sourceTree = DEVELOPER_DIR; };
+		2B69376AF1076BB56EE0F404E5E6E7D6 /* ELCImagePickerController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ELCImagePickerController-dummy.m"; sourceTree = "<group>"; };
+		347DA1DBBEB34FAAB2319B014B0C144A /* Pods-GrandCentralDispatchTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-GrandCentralDispatchTests-dummy.m"; sourceTree = "<group>"; };
+		36C0C47603E41189E7B40DD80E1DE15C /* Pods-GrandCentralDispatch.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GrandCentralDispatch.release.xcconfig"; sourceTree = "<group>"; };
+		37B3481076E20B9F345D973FD2AFC41B /* ELCAssetSelectionDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ELCAssetSelectionDelegate.h; path = Classes/ELCImagePicker/ELCAssetSelectionDelegate.h; sourceTree = "<group>"; };
+		3F4C9D309EBD087A4F194273F130963B /* Overlay.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = Overlay.png; path = Classes/ELCImagePicker/Resources/Overlay.png; sourceTree = "<group>"; };
+		442B9174E4309AE2F89AEA7969C7460A /* ELCAssetCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ELCAssetCell.m; path = Classes/ELCImagePicker/ELCAssetCell.m; sourceTree = "<group>"; };
+		462008DBFFB55FF3C4E32C9F0F5A15A2 /* ELCAlbumPickerController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ELCAlbumPickerController.m; path = Classes/ELCImagePicker/ELCAlbumPickerController.m; sourceTree = "<group>"; };
+		4A53BA8334C6CAD8193DE16A2EA13ADA /* Pods-GrandCentralDispatchTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GrandCentralDispatchTests.release.xcconfig"; sourceTree = "<group>"; };
+		52B71A98CD9E8BC008E505199E21E1D6 /* ELCAssetPicker.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = ELCAssetPicker.xib; path = Classes/ELCImagePicker/Resources/ELCAssetPicker.xib; sourceTree = "<group>"; };
+		56CF63CF257C3FE81857DC4CA3F0DA44 /* ELCAssetTablePicker.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ELCAssetTablePicker.m; path = Classes/ELCImagePicker/ELCAssetTablePicker.m; sourceTree = "<group>"; };
+		59B9129FDC2C6728959D7A805C6FFDEA /* Pods-GrandCentralDispatchTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GrandCentralDispatchTests-frameworks.sh"; sourceTree = "<group>"; };
+		7964CDDFA9A24C6A863502A2F9A496BF /* Pods-GrandCentralDispatch-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GrandCentralDispatch-frameworks.sh"; sourceTree = "<group>"; };
+		7C561E57D60731D9FB28B491A5DD5F2E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		8407CC6237C1FEE2B8A975BB8BF59045 /* ELCImagePickerController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ELCImagePickerController.m; path = Classes/ELCImagePicker/ELCImagePickerController.m; sourceTree = "<group>"; };
+		84C53CBB4012BA720010D796C8E97EDC /* ELCAssetTablePicker.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = ELCAssetTablePicker.xib; path = Classes/ELCImagePicker/Resources/ELCAssetTablePicker.xib; sourceTree = "<group>"; };
+		875B2785F4F2ED3BDAF6E2546E2B0DCA /* Pods-GrandCentralDispatch-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-GrandCentralDispatch-dummy.m"; sourceTree = "<group>"; };
+		8EBC97E4F9A3C0E054FB24911CD1310A /* Pods-GrandCentralDispatch.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GrandCentralDispatch.debug.xcconfig"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93C17C082365458A330FD58A313DA188 /* Pods-GrandCentralDispatchTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-GrandCentralDispatchTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		98DAE9358AF6BCA219302B32ED6E0162 /* Pods-GrandCentralDispatch-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-GrandCentralDispatch-acknowledgements.markdown"; sourceTree = "<group>"; };
+		9933E7FD3F074BD2964AE30E2B643D39 /* ELCImagePickerController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ELCImagePickerController.h; path = Classes/ELCImagePicker/ELCImagePickerController.h; sourceTree = "<group>"; };
+		9D1D9A0173E2B0255AC105EE7DC47501 /* libPods-GrandCentralDispatch.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-GrandCentralDispatch.a"; path = "libPods-GrandCentralDispatch.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5CF57B5A8B0830B41B3DD720D592688 /* Pods-GrandCentralDispatchTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GrandCentralDispatchTests-resources.sh"; sourceTree = "<group>"; };
+		A85E327D6C315DB17738FACEE00CCABD /* ELCAsset.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ELCAsset.h; path = Classes/ELCImagePicker/ELCAsset.h; sourceTree = "<group>"; };
+		B09E00D4754C0EE357E925B486264FBC /* ELCImagePickerController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ELCImagePickerController-prefix.pch"; sourceTree = "<group>"; };
+		B3313D056F986C3E84F65A52A89244F7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		B85D4305A0002510DBEBBABDE1AA4178 /* Overlay@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "Overlay@2x.png"; path = "Classes/ELCImagePicker/Resources/Overlay@2x.png"; sourceTree = "<group>"; };
+		CCDE18434325F480B0579EC0A290859A /* libPods-GrandCentralDispatchTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-GrandCentralDispatchTests.a"; path = "libPods-GrandCentralDispatchTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D3942D539E64AB56F8E81CBB74A3A39D /* Pods-GrandCentralDispatch-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GrandCentralDispatch-resources.sh"; sourceTree = "<group>"; };
+		D62DB94780FC58F8C2B9799CED516B82 /* ELCAssetCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ELCAssetCell.h; path = Classes/ELCImagePicker/ELCAssetCell.h; sourceTree = "<group>"; };
+		DF28BA6C157373F9A5E7691768A8DD1C /* Pods-GrandCentralDispatch-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GrandCentralDispatch-acknowledgements.plist"; sourceTree = "<group>"; };
+		E4301C93F3FA377313873C6C86C2AC74 /* Pods-GrandCentralDispatchTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GrandCentralDispatchTests.debug.xcconfig"; sourceTree = "<group>"; };
+		E8E288ABBB53B6AB1E77396896AFF631 /* ELCImagePickerController.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ELCImagePickerController.xcconfig; sourceTree = "<group>"; };
+		EB990EDB12DCA87FD71379109DDACD11 /* ELCAlbumPickerController.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = ELCAlbumPickerController.xib; path = Classes/ELCImagePicker/Resources/ELCAlbumPickerController.xib; sourceTree = "<group>"; };
+		F76326D0C1EE7EC88767FFFD793665BA /* Pods-GrandCentralDispatchTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GrandCentralDispatchTests-acknowledgements.plist"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3BE85D775026343E3A5A9E3C6885454C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84ACB97A0B7692B9CDBE910342EDC35E /* AssetsLibrary.framework in Frameworks */,
+				FB2E6E691F6C3568B0D8D91432072E10 /* CoreLocation.framework in Frameworks */,
+				9038C92655530313DCC7DBB4B356EDE2 /* Foundation.framework in Frameworks */,
+				337B13A05886CD80A84935F186A52958 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		758050990DFAA69BC43472630E2492A5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1E7BE5A1EE9845C6DF4D3A43AAC983CA /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DAA4681598E4699BF4E0D1CB99141428 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C82903159FD711CF0122DEF30C5EFB7E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		14B8B9B15ECBE87983FF987239AB2D7B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				92132FA57A26660F390935BAFD62D1DD /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		21B490A0382E6D28AE492FF952AD425D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1EECFC1AD891AABDC25F56036662883C /* libELCImagePickerController.a */,
+				9D1D9A0173E2B0255AC105EE7DC47501 /* libPods-GrandCentralDispatch.a */,
+				CCDE18434325F480B0579EC0A290859A /* libPods-GrandCentralDispatchTests.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4AA8BEBAFBCDB8D70C89C27ADB5E4D48 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				E8E288ABBB53B6AB1E77396896AFF631 /* ELCImagePickerController.xcconfig */,
+				2B69376AF1076BB56EE0F404E5E6E7D6 /* ELCImagePickerController-dummy.m */,
+				B09E00D4754C0EE357E925B486264FBC /* ELCImagePickerController-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/ELCImagePickerController";
+			sourceTree = "<group>";
+		};
+		522945416FF871EE40CC5A6F3094DB00 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				EA57373F33D616B61598ECFD6FBD95AF /* Pods-GrandCentralDispatch */,
+				D665A959D08B7C1C247A843C1A180E64 /* Pods-GrandCentralDispatchTests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		755F78BE12C2F44F54A26BD4440529BD /* ELCImagePickerController */ = {
+			isa = PBXGroup;
+			children = (
+				02EDB39FEECECC8C83CA902C20F849DD /* ELCAlbumPickerController.h */,
+				462008DBFFB55FF3C4E32C9F0F5A15A2 /* ELCAlbumPickerController.m */,
+				A85E327D6C315DB17738FACEE00CCABD /* ELCAsset.h */,
+				0773F578FBEE6DB12CDB2B7EA7411157 /* ELCAsset.m */,
+				D62DB94780FC58F8C2B9799CED516B82 /* ELCAssetCell.h */,
+				442B9174E4309AE2F89AEA7969C7460A /* ELCAssetCell.m */,
+				139FF3BCC9EDD85EE3404306D7A10EE5 /* ELCAssetPickerFilterDelegate.h */,
+				37B3481076E20B9F345D973FD2AFC41B /* ELCAssetSelectionDelegate.h */,
+				17EF454A58B681670B0586507D0EE50C /* ELCAssetTablePicker.h */,
+				56CF63CF257C3FE81857DC4CA3F0DA44 /* ELCAssetTablePicker.m */,
+				9933E7FD3F074BD2964AE30E2B643D39 /* ELCImagePickerController.h */,
+				8407CC6237C1FEE2B8A975BB8BF59045 /* ELCImagePickerController.m */,
+				9E04F16CDAEE50B4B11967428B374D34 /* Resources */,
+				4AA8BEBAFBCDB8D70C89C27ADB5E4D48 /* Support Files */,
+			);
+			name = ELCImagePickerController;
+			path = ELCImagePickerController;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				14B8B9B15ECBE87983FF987239AB2D7B /* Frameworks */,
+				9905A271B801A067275DE3A03B165AA0 /* Pods */,
+				21B490A0382E6D28AE492FF952AD425D /* Products */,
+				522945416FF871EE40CC5A6F3094DB00 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		92132FA57A26660F390935BAFD62D1DD /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				131F4AA328FA0C717A3681C5A15ADDBD /* AssetsLibrary.framework */,
+				2AC2501275FE5CAC51259C95A5C47621 /* CoreLocation.framework */,
+				B3313D056F986C3E84F65A52A89244F7 /* Foundation.framework */,
+				7C561E57D60731D9FB28B491A5DD5F2E /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		9905A271B801A067275DE3A03B165AA0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				755F78BE12C2F44F54A26BD4440529BD /* ELCImagePickerController */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		9E04F16CDAEE50B4B11967428B374D34 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				EB990EDB12DCA87FD71379109DDACD11 /* ELCAlbumPickerController.xib */,
+				52B71A98CD9E8BC008E505199E21E1D6 /* ELCAssetPicker.xib */,
+				84C53CBB4012BA720010D796C8E97EDC /* ELCAssetTablePicker.xib */,
+				3F4C9D309EBD087A4F194273F130963B /* Overlay.png */,
+				B85D4305A0002510DBEBBABDE1AA4178 /* Overlay@2x.png */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		D665A959D08B7C1C247A843C1A180E64 /* Pods-GrandCentralDispatchTests */ = {
+			isa = PBXGroup;
+			children = (
+				93C17C082365458A330FD58A313DA188 /* Pods-GrandCentralDispatchTests-acknowledgements.markdown */,
+				F76326D0C1EE7EC88767FFFD793665BA /* Pods-GrandCentralDispatchTests-acknowledgements.plist */,
+				347DA1DBBEB34FAAB2319B014B0C144A /* Pods-GrandCentralDispatchTests-dummy.m */,
+				59B9129FDC2C6728959D7A805C6FFDEA /* Pods-GrandCentralDispatchTests-frameworks.sh */,
+				A5CF57B5A8B0830B41B3DD720D592688 /* Pods-GrandCentralDispatchTests-resources.sh */,
+				E4301C93F3FA377313873C6C86C2AC74 /* Pods-GrandCentralDispatchTests.debug.xcconfig */,
+				4A53BA8334C6CAD8193DE16A2EA13ADA /* Pods-GrandCentralDispatchTests.release.xcconfig */,
+			);
+			name = "Pods-GrandCentralDispatchTests";
+			path = "Target Support Files/Pods-GrandCentralDispatchTests";
+			sourceTree = "<group>";
+		};
+		EA57373F33D616B61598ECFD6FBD95AF /* Pods-GrandCentralDispatch */ = {
+			isa = PBXGroup;
+			children = (
+				98DAE9358AF6BCA219302B32ED6E0162 /* Pods-GrandCentralDispatch-acknowledgements.markdown */,
+				DF28BA6C157373F9A5E7691768A8DD1C /* Pods-GrandCentralDispatch-acknowledgements.plist */,
+				875B2785F4F2ED3BDAF6E2546E2B0DCA /* Pods-GrandCentralDispatch-dummy.m */,
+				7964CDDFA9A24C6A863502A2F9A496BF /* Pods-GrandCentralDispatch-frameworks.sh */,
+				D3942D539E64AB56F8E81CBB74A3A39D /* Pods-GrandCentralDispatch-resources.sh */,
+				8EBC97E4F9A3C0E054FB24911CD1310A /* Pods-GrandCentralDispatch.debug.xcconfig */,
+				36C0C47603E41189E7B40DD80E1DE15C /* Pods-GrandCentralDispatch.release.xcconfig */,
+			);
+			name = "Pods-GrandCentralDispatch";
+			path = "Target Support Files/Pods-GrandCentralDispatch";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		D5FE12192784210701295B6BFB1DE658 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				39F7C1FAF9A48BC02BB33F9863D7846B /* ELCAlbumPickerController.h in Headers */,
+				BFAC4706DDF693C959B4CD0ED7FFCE94 /* ELCAsset.h in Headers */,
+				D26DD892FF37837529E60E840492B493 /* ELCAssetCell.h in Headers */,
+				4EBAF2868E7F7CC313502179C86388E9 /* ELCAssetPickerFilterDelegate.h in Headers */,
+				F4B35711078C164BBD1F2270CF762B1B /* ELCAssetSelectionDelegate.h in Headers */,
+				8443BF841B4B7C29BAEE176963AA601B /* ELCAssetTablePicker.h in Headers */,
+				43306AA60C6C9AF84FCDC771F6DC4F1B /* ELCImagePickerController.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		735702E110499DFA3586B12D834B9DFE /* Pods-GrandCentralDispatch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 295BFFB8A4BF4E2780483A909848368A /* Build configuration list for PBXNativeTarget "Pods-GrandCentralDispatch" */;
+			buildPhases = (
+				9E1DB4804C69574E09A451CB36202AEA /* Sources */,
+				758050990DFAA69BC43472630E2492A5 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ECA2FAF3E736C9C5605694F2F9C9B0E2 /* PBXTargetDependency */,
+			);
+			name = "Pods-GrandCentralDispatch";
+			productName = "Pods-GrandCentralDispatch";
+			productReference = 9D1D9A0173E2B0255AC105EE7DC47501 /* libPods-GrandCentralDispatch.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		7ABA3151C8F2F973644299F0013B3FCB /* Pods-GrandCentralDispatchTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 29A529AED9441CDBD36AD1EC21B5467C /* Build configuration list for PBXNativeTarget "Pods-GrandCentralDispatchTests" */;
+			buildPhases = (
+				A340E440BBCA510798F84A67709B885B /* Sources */,
+				DAA4681598E4699BF4E0D1CB99141428 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-GrandCentralDispatchTests";
+			productName = "Pods-GrandCentralDispatchTests";
+			productReference = CCDE18434325F480B0579EC0A290859A /* libPods-GrandCentralDispatchTests.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		7DF68AF3B6BEB785886D7CF10706AA75 /* ELCImagePickerController */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 946E974CB1C8F73D7388AF20C86F4E8E /* Build configuration list for PBXNativeTarget "ELCImagePickerController" */;
+			buildPhases = (
+				8D883368D4F4767834245FB780F38A86 /* Sources */,
+				3BE85D775026343E3A5A9E3C6885454C /* Frameworks */,
+				D5FE12192784210701295B6BFB1DE658 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ELCImagePickerController;
+			productName = ELCImagePickerController;
+			productReference = 1EECFC1AD891AABDC25F56036662883C /* libELCImagePickerController.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 21B490A0382E6D28AE492FF952AD425D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7DF68AF3B6BEB785886D7CF10706AA75 /* ELCImagePickerController */,
+				735702E110499DFA3586B12D834B9DFE /* Pods-GrandCentralDispatch */,
+				7ABA3151C8F2F973644299F0013B3FCB /* Pods-GrandCentralDispatchTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8D883368D4F4767834245FB780F38A86 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB0A89A63B25620E747D2BE393DAE1BE /* ELCAlbumPickerController.m in Sources */,
+				2BF0954583B9BF9A16472DF5D5002268 /* ELCAsset.m in Sources */,
+				2440E0805FB68F224A1EB0B56360A903 /* ELCAssetCell.m in Sources */,
+				55E6A692A6EAE3E2F58200C3B07229A9 /* ELCAssetTablePicker.m in Sources */,
+				FA644FFB3F07DBC9F35DE2F9E4150793 /* ELCImagePickerController-dummy.m in Sources */,
+				602E530E552BB437A578F91DDE6032F3 /* ELCImagePickerController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9E1DB4804C69574E09A451CB36202AEA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3AE782BD896640F3BC6C379956F7DD96 /* Pods-GrandCentralDispatch-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A340E440BBCA510798F84A67709B885B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0DEB2C8CB5BA3B218B118B2E0F2CF38B /* Pods-GrandCentralDispatchTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		ECA2FAF3E736C9C5605694F2F9C9B0E2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ELCImagePickerController;
+			target = 7DF68AF3B6BEB785886D7CF10706AA75 /* ELCImagePickerController */;
+			targetProxy = 16342CD17C00C85C151A0DC16F30408B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		14BEA81BEA5FDBBC74A2B89E84DAAC05 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E8E288ABBB53B6AB1E77396896AFF631 /* ELCImagePickerController.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/ELCImagePickerController/ELCImagePickerController-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		34E34EFC4F12DA3203F0EEC20FA4A8B3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8EBC97E4F9A3C0E054FB24911CD1310A /* Pods-GrandCentralDispatch.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6F9224530522DD3C735EC96CF142642E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		736C86BA4BD519B78D45792A50237C2B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E4301C93F3FA377313873C6C86C2AC74 /* Pods-GrandCentralDispatchTests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7DD8B548604C978E2248F22A24E5868C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E8E288ABBB53B6AB1E77396896AFF631 /* ELCImagePickerController.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/ELCImagePickerController/ELCImagePickerController-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B48946CA33137B93BE5E0EB97B7945E9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 36C0C47603E41189E7B40DD80E1DE15C /* Pods-GrandCentralDispatch.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B57951D085A1B98A97F8A1062A5E5C5B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		FAE7D77A2F95DE6B855BDA762CDFD101 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4A53BA8334C6CAD8193DE16A2EA13ADA /* Pods-GrandCentralDispatchTests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		295BFFB8A4BF4E2780483A909848368A /* Build configuration list for PBXNativeTarget "Pods-GrandCentralDispatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				34E34EFC4F12DA3203F0EEC20FA4A8B3 /* Debug */,
+				B48946CA33137B93BE5E0EB97B7945E9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		29A529AED9441CDBD36AD1EC21B5467C /* Build configuration list for PBXNativeTarget "Pods-GrandCentralDispatchTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				736C86BA4BD519B78D45792A50237C2B /* Debug */,
+				FAE7D77A2F95DE6B855BDA762CDFD101 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B57951D085A1B98A97F8A1062A5E5C5B /* Debug */,
+				6F9224530522DD3C735EC96CF142642E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		946E974CB1C8F73D7388AF20C86F4E8E /* Build configuration list for PBXNativeTarget "ELCImagePickerController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7DD8B548604C978E2248F22A24E5868C /* Debug */,
+				14BEA81BEA5FDBBC74A2B89E84DAAC05 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

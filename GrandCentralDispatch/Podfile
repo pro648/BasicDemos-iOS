@@ -1,0 +1,12 @@
+platform :ios, '9.0'
+inhibit_all_warnings!
+
+target 'GrandCentralDispatch' do
+pod 'ELCImagePickerController', '~> 0.2.0'
+
+  target 'GrandCentralDispatchTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+end

@@ -6,4 +6,4 @@
 
 详细介绍查看下面文章：
 
-<https://github.com/pro648/tips/wiki/Grand Central Dispatch的使用>
+<https://github.com/pro648/tips/wiki/Grand-Central-Dispatch的使用>
