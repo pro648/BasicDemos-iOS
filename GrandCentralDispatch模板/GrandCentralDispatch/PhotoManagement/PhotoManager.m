@@ -15,7 +15,7 @@
 
 @end
 
-static NSString * const baseURLString = @"https://raw.githubusercontent.com/wiki/pro648/tips/images/GCD";
+NSString * const baseURLString = @"https://raw.githubusercontent.com/wiki/pro648/tips/images/GCD";
 
 @implementation PhotoManager
 
