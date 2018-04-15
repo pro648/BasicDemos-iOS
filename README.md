@@ -12,6 +12,7 @@ iOS学习进程中的demo汇总
 | CollectionView            | [UICollectionView及其新功能drag and drop](https://github.com/pro648/tips/wiki/UICollectionView及其新功能drag-and-drop) |
 | Delegation&Notification   | [委托、通知传值的用法与区别](https://github.com/pro648/tips/wiki/%E5%A7%94%E6%89%98%E3%80%81%E9%80%9A%E7%9F%A5%E4%BC%A0%E5%80%BC%E7%9A%84%E7%94%A8%E6%B3%95%E4%B8%8E%E5%8C%BA%E5%88%AB) |
 | Delegation&Notification模板 | [委托、通知传值的用法与区别](https://github.com/pro648/tips/wiki/%E5%A7%94%E6%89%98%E3%80%81%E9%80%9A%E7%9F%A5%E4%BC%A0%E5%80%BC%E7%9A%84%E7%94%A8%E6%B3%95%E4%B8%8E%E5%8C%BA%E5%88%AB)博文模板 |
+|DisplayViewController|[View Controller 转场](https://github.com/pro648/tips/wiki/View%20Controller%20%E8%BD%AC%E5%9C%BA)|
 | FileManager               | [使用NSFileManager管理文件系统](https://github.com/pro648/tips/wiki/%E4%BD%BF%E7%94%A8NSFileManager%E7%AE%A1%E7%90%86%E6%96%87%E4%BB%B6%E7%B3%BB%E7%BB%9F) |
 |GrandCentralDispatch       | [Grand Central Dispatch的使用](https://github.com/pro648/tips/wiki/Grand-Central-Dispatch%E7%9A%84%E4%BD%BF%E7%94%A8)|
 |GrandCentralDispatch模板    | [Grand Central Dispatch的使用](https://github.com/pro648/tips/wiki/Grand-Central-Dispatch%E7%9A%84%E4%BD%BF%E7%94%A8)文章模板 |
