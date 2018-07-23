@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="6SE-XM-Gja">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Today View Controller-->
+        <scene sceneID="RqY-90-hmu">
+            <objects>
+                <viewController id="6SE-XM-Gja" customClass="TodayViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" simulatedAppContext="notificationCenter" id="n9y-o9-WLG">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="180"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="3o1-qu-YqL">
+                                <rect key="frame" x="16" y="50" width="288" height="20.5"/>
+                                <subviews>
+                                    <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Edg-Fu-UsN">
+                                        <rect key="frame" x="0.0" y="9.5" width="224" height="2"/>
+                                    </progressView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="50.0%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9P2-Qe-Qwp">
+                                        <rect key="frame" x="240" y="0.0" width="48" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="um0-a5-cw8">
+                                <rect key="frame" x="16" y="100" width="284" height="64"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="um0-a5-cw8" firstAttribute="top" secondItem="vHe-IA-8FR" secondAttribute="top" constant="100" id="0i4-Yq-JcZ"/>
+                            <constraint firstItem="vHe-IA-8FR" firstAttribute="trailing" secondItem="3o1-qu-YqL" secondAttribute="trailing" constant="16" id="6QG-vw-H8L"/>
+                            <constraint firstItem="um0-a5-cw8" firstAttribute="leading" secondItem="vHe-IA-8FR" secondAttribute="leading" constant="16" id="ADM-ka-qcy"/>
+                            <constraint firstItem="3o1-qu-YqL" firstAttribute="top" secondItem="vHe-IA-8FR" secondAttribute="top" constant="50" id="L7Q-6a-A5L"/>
+                            <constraint firstItem="3o1-qu-YqL" firstAttribute="leading" secondItem="vHe-IA-8FR" secondAttribute="leading" constant="16" id="PgO-HG-TZC"/>
+                            <constraint firstItem="vHe-IA-8FR" firstAttribute="trailing" secondItem="um0-a5-cw8" secondAttribute="trailing" constant="20" id="ZOG-sj-Nir"/>
+                            <constraint firstItem="vHe-IA-8FR" firstAttribute="bottom" secondItem="um0-a5-cw8" secondAttribute="bottom" constant="16" id="c4g-zs-2T1"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="vHe-IA-8FR"/>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="320" height="180"/>
+                    <connections>
+                        <outlet property="detailsLabel" destination="um0-a5-cw8" id="nyE-Ih-blQ"/>
+                        <outlet property="percentLabel" destination="9P2-Qe-Qwp" id="ftl-hT-tVK"/>
+                        <outlet property="progressView" destination="Edg-Fu-UsN" id="07g-Yx-jvM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qon-0Q-Ww5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="90" y="-84"/>
+        </scene>
+    </scenes>
+</document>

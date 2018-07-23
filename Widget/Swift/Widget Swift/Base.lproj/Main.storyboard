@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="alf-fV-jkL">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--FirstVC-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="FirstVC" customModule="Widget_Swift" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6v2-gb-jp0">
+                                <rect key="frame" x="166" y="253" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nbf-Oe-O7J">
+                                <rect key="frame" x="144.5" y="318" width="85" height="30"/>
+                                <state key="normal" title="Hide Widget"/>
+                                <connections>
+                                    <action selector="handleButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tkJ-Cg-T9r"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Nbf-Oe-O7J" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="AM5-Qd-Y38"/>
+                            <constraint firstItem="6v2-gb-jp0" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="DaF-qh-b8P"/>
+                            <constraint firstItem="Nbf-Oe-O7J" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Oak-Kf-KCA"/>
+                            <constraint firstAttribute="centerY" secondItem="6v2-gb-jp0" secondAttribute="centerY" constant="70" id="zFk-cL-bjd"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="FirstVC" image="first" id="fJl-x1-LXb"/>
+                    <connections>
+                        <outlet property="label" destination="6v2-gb-jp0" id="20A-bp-Q0Y"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1076" y="128.18590704647679"/>
+        </scene>
+        <!--SecondVC-->
+        <scene sceneID="BbI-Vc-x7f">
+            <objects>
+                <viewController id="OJQ-HC-7Qr" customClass="SecondVC" customModule="Widget_Swift" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="EqH-ec-Ggd">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L3l-VA-U0k">
+                                <rect key="frame" x="166" y="253" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="centerY" secondItem="L3l-VA-U0k" secondAttribute="centerY" constant="70" id="4ts-bl-v7A"/>
+                            <constraint firstItem="L3l-VA-U0k" firstAttribute="centerX" secondItem="EqH-ec-Ggd" secondAttribute="centerX" id="utz-Du-X1e"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Bdu-Pc-QAh"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="SecondVC" image="first" id="I54-pW-hhI"/>
+                    <connections>
+                        <outlet property="label" destination="L3l-VA-U0k" id="8LO-0m-hr4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AjQ-qp-j5K" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1076" y="800.14992503748135"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="udA-Z3-12N">
+            <objects>
+                <tabBarController storyboardIdentifier="UITabBarController" automaticallyAdjustsScrollViewInsets="NO" id="alf-fV-jkL" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="5Tf-Da-qDT">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="uDa-z1-gdP"/>
+                        <segue destination="OJQ-HC-7Qr" kind="relationship" relationship="viewControllers" id="Ibe-Hg-KJH"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="F9K-I2-dQo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="463.71814092953525"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="first" width="30" height="30"/>
+    </resources>
+</document>
