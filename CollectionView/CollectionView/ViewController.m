@@ -268,9 +268,11 @@ static NSString * const footerIdentifier = @"footerIdentifier";
             [self.simpleModel.model[destinationIndexPath.section] insertObject:imageName atIndex:destinationIndexPath.item];
 
             // 更新collectionView。
-            [collectionView deleteItemsAtIndexPaths:@[sourceIndexPath]];
-            [collectionView insertItemsAtIndexPaths:@[destinationIndexPath]];
+            [collectionView moveItemAtIndexPath:sourceIndexPath toIndexPath:destinationIndexPath];
         } completion:nil];
+        
+        // 以动画形式移动cell。
+        [coordinator dropItem:coordinator.items.firstObject.dragItem toItemAtIndexPath:destinationIndexPath];
     }
 }
 
