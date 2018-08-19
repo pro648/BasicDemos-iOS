@@ -83,7 +83,7 @@
     // 2.进行浅复制。
     NSArray *myArray2 = [myArray1 copy];
     NSMutableArray *myMutableArray3 = [myArray1 mutableCopy];
-    NSArray *myArray4 = [[NSArray alloc] initWithArray:myArray1 copyItems:NO];
+    NSArray *myArray4 = [[NSArray alloc] initWithArray:myArray1];
     
     // 3.修改myArray2的第一个元素。
     NSMutableString *tempString = myArray2.firstObject;
