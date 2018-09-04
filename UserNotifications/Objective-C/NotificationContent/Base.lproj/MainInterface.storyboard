@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="vdR-Dm-lVT">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Notification View Controller-->
+        <scene sceneID="EWR-ng-eJk">
+            <objects>
+                <viewController id="vdR-Dm-lVT" userLabel="Notification View Controller" customClass="NotificationViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" simulatedAppContext="notificationCenter" id="cok-xl-ZYE">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="160"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello World" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="byl-r6-aua">
+                                <rect key="frame" x="0.0" y="15" width="320" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="🔊" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rRk-mY-eda">
+                                <rect key="frame" x="0.0" y="45" width="320" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="flO-Br-nxe"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="60"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="byl-r6-aua" firstAttribute="trailing" secondItem="XsA-6p-ufn" secondAttribute="trailing" id="4hI-s1-Nzf"/>
+                            <constraint firstItem="byl-r6-aua" firstAttribute="leading" secondItem="XsA-6p-ufn" secondAttribute="leading" id="F86-jh-Etr"/>
+                            <constraint firstItem="rRk-mY-eda" firstAttribute="leading" secondItem="XsA-6p-ufn" secondAttribute="leading" id="KqP-Kc-TGJ"/>
+                            <constraint firstItem="XsA-6p-ufn" firstAttribute="trailing" secondItem="rRk-mY-eda" secondAttribute="trailing" id="L2I-dV-xMh"/>
+                            <constraint firstItem="XsA-6p-ufn" firstAttribute="bottom" secondItem="rRk-mY-eda" secondAttribute="bottom" constant="15" id="OLV-o8-caj"/>
+                            <constraint firstItem="byl-r6-aua" firstAttribute="top" secondItem="XsA-6p-ufn" secondAttribute="top" constant="15" id="ei3-d3-9bm"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="XsA-6p-ufn"/>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="320" height="160"/>
+                    <connections>
+                        <outlet property="label" destination="byl-r6-aua" id="sEh-WE-vuq"/>
+                        <outlet property="speakerLabel" destination="rRk-mY-eda" id="sjw-Lb-gMa"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Doi-Sa-ycu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="35.200000000000003" y="32.383808095952027"/>
+        </scene>
+    </scenes>
+</document>
