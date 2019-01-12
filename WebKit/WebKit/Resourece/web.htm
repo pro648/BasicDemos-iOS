@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        
+        <style>
+            div {
+                padding: 20px;
+                font-size: 50px;
+            }
+        </style>
+        
+        <div>Call +86 120 1234 1234</div>
+        
+        <div>
+            This is an email link:
+            <a href="mailto:someone@example.com?Subject=Hello%20again&Body=Not Today" target="_blank">Send Mail</a>
+        </div>
+        
+        <div>
+            This is an tel link:
+            <a href="tel://+8612012345678" target="_blank">Call Me</a>
+        </div>
+        
+        <div>
+            This is an sms link:
+            <a href="sms://+8612012345678&body=So%20Far,%20So%20Good.", target="_blank">Text Me</a>
+        </div>
+        
+        <div>Open link on the App Store : <a href="https://itunes.apple.com/us/app/wechat/id414478124?mt=8" target="_blank">WeChat</a></div>
+        
+        <div>Open link in a new window or tab: <a href="https://github.com/pro648/" target="_blank">Follow Me</a></div>
+        
+        <div>Click the button to display an alert box.</div>
+        
+        <center>
+            <button style="height:150px; width:150px; font-size: 30px;" class="test" onclick="alertFunction()">Try it</button>
+        </center>
+        
+        <script>
+            function alertFunction() {
+                alert("Alert box URL:");
+            }
+        </script>
+        
+        <div>Click the button to display a confirm box.</div>
+        
+        <center>
+            <button style="height:150px; width:150px; font-size: 30px;" onclick="confirmFunction()">Try it</button>
+        </center>
+        
+        <script>
+            function confirmFunction() {
+                confirm("Make Your Choice");
+            }
+        </script>
+        
+        <div>Click the button to demonstrate the prompt box.</div>
+        
+        <center>
+            <button style="height:150px; width:150px; font-size: 30px;" onclick="promptFunction()">Try it</button>
+        </center>
+        
+        <div id="demo"></div>
+        
+        <script>
+            function promptFunction() {
+                var person = prompt("Please enter your name", "pro648");
+                if (person != null) {
+                    document.getElementById("demo").innerHTML =
+                    "Hello " + person + "! How are you today?";
+                }
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <p style="font-size:50px; padding:20px;"> Simple Demo to explanin Web Interceptors in iOS  </p>
+        <p style="font-size:40px; padding:20px;"> load the Image using normal http </p>
+        <img src="https://placehold.it/120x120&text=image1" alt="Smiley face" width="250" height="250" hspace="20">
+        <p style="font-size:40px; padding:20px;"> load the image by using custom scheme </p>
+        <img src="custom-scheme://path?type=remote&url=https:\//placehold.it/120x120&text=image1" alt="Smiley face" width="250" height="250" hspace="20">
+        <p style="font-size:40px; padding:20px;"> load the image from Photos App </p>
+        <img src="custom-scheme://path?type=photos" alt="Smiley face" width="350" height="350" hspace="20">
+    </body>
+</html>
+

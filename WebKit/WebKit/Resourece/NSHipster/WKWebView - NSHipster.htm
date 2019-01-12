@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<!-- saved from url=(0032)https://nshipster.com/wkwebview/ -->
+<html lang="en-US"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>WKWebView - NSHipster</title>
+    <meta name="description" content="iOS has a complicated relationship with the web. And it goes back to the very inception of the platform over a decade ago.">
+    <link rel="canonical" href="https://nshipster.com/wkwebview/">
+    <meta name="revisit-after" content="7 days">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="alternate" type="application/atom+xml" title="NSHipster Atom Feed" href="https://nshipster.com/feed.xml">
+    <link rel="preload" as="font" href="https://nshipster.com/assets/nshipster-e474c0004ccdeca4e27e7ae1320e0e04a943b0ea5348b336356b7ac223497fda.woff2" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" as="font" href="https://nshipster.com/assets/nshipster-743868430209628f9d7933ea65c7e31cdf597e9a27d01d372c33fc501f4c6722.woff" type="font/woff" crossorigin="anonymous">
+    <style rel="stylesheet" type="text/css" integrity="sha256-1FAmfoG4b6VZwSjx09WhZCx22DrQc6wSDj1DsX7g6/8=" crossorigin="anonymous">
+      ﻿html{border-top:3px #ff8000 solid}html body{background-color:#fefefe;color:#282a36}#logo #ns{fill:#ff8000}a,a:visited{color:#ff8000}a:hover,a:visited:hover{text-decoration:none}@keyframes twirl{0%{transform:scale(1) rotate(0)}10%,20%{transform:scale(0.9) rotate(-3deg)}30%,50%,70%,90%{transform:scale(1.1) rotate(3deg)}40%,60%,80%{transform:scale(1.1) rotate(-3deg)}100%{transform:scale(1) rotate(0)}}@font-face{font-family:"Merriweather";src:local("Merriweather Regular"),local("Merriweather-Regular"),url(/assets/Merriweather-Regular-e50fe78e902ad7649d2a9ec69a67c9a941657604540b0b077b720a0562072915.woff2) format("woff2"),url(/assets/Merriweather-Regular-4549033d084e479d2c53500851ca2e5fd43fd83ac4ae26445e0974ae73cd3d05.woff) format("woff");font-weight:normal;font-style:normal;font-display:optional}@font-face{font-family:"Merriweather";src:local("Merriweather Light"),local("Merriweather-Light"),url(/assets/Merriweather-Light-c2ef5188a3d41db369bfec98586cacc22c1aefa23a02333101c05b6c7e35ed59.woff2) format("woff2"),url(/assets/Merriweather-Light-5d5f2b4aac0254b3ef80c3e04bcbbd021ab468e6205dade23a9943277ed2f15b.woff) format("woff");font-weight:300;font-style:normal;font-display:optional}@font-face{font-family:"Merriweather";src:local("Merriweather Black"),local("Merriweather-Black"),url(/assets/Merriweather-Black-fd0c4da3e1b331a0f3c05ca30ef2f73d3248c19377f0e347bbd27f5ca3ace049.woff2) format("woff2"),url(/assets/Merriweather-Black-0abb3a596dcef7e60a0ce4000352ae834fa7e6f49f48f1f568dd1b16db037faa.woff) format("woff");font-weight:900;font-style:normal;font-display:optional}@font-face{font-family:"Merriweather";src:local("Merriweather Bold"),local("Merriweather-Bold"),url(/assets/Merriweather-Bold-66b60fab0c23051945cad3a206665130e9a8742ad25afc03675df8e30f9bd1f1.woff2) format("woff2"),url(/assets/Merriweather-Bold-91e91f3c9d8e79d7f50076508c711118d17335ad0d8adaaed9e82e7e0c88f2a3.woff) format("woff");font-weight:bold;font-style:normal;font-display:optional}@font-face{font-family:"Merriweather";src:local("Merriweather Black Italic"),local("Merriweather-BlackItalic"),url(/assets/Merriweather-BlackItalic-78fadd58be94cb66b7b96e9368a431cb7ba39853c24dfbac96af11b2566cc80a.woff2) format("woff2"),url(/assets/Merriweather-BlackItalic-25d34bcb442b873300a27a1fda06b53db76b343b21b1d2967ebf8d50fc98820c.woff) format("woff");font-weight:900;font-style:italic;font-display:optional}@font-face{font-family:"Merriweather";src:local("Merriweather Italic"),local("Merriweather-Italic"),url(/assets/Merriweather-Italic-c8cb2c6ad2cb79fd515ac3eef6b70c481f0641f344e3e7154324eab0d9b442e7.woff2) format("woff2"),url(/assets/Merriweather-Italic-2ff5301c0bc5e6bb36aa90461a2778925615296b30cb68de03adfbe30f3ba034.woff) format("woff");font-weight:normal;font-style:italic;font-display:optional}@font-face{font-family:"Merriweather";src:local("Merriweather Bold Italic"),local("Merriweather-BoldItalic"),url(/assets/Merriweather-BoldItalic-6555d0e597bb610c9885788f6ea9fcc1bdc2cdb1a27d6fa789b26286f0236d96.woff2) format("woff2"),url(/assets/Merriweather-BoldItalic-c5af58f9b3ca849796e320463efb479012c8da669fade00fb76169e37ec6b408.woff) format("woff");font-weight:bold;font-style:italic;font-display:optional}@font-face{font-family:"Merriweather";src:local("Merriweather Light Italic"),local("Merriweather-LightItalic"),url(/assets/Merriweather-LightItalic-83b26b2f59b0bbd312f3f4b8551f5295a64cbc9645711d6b006faaa79c7753d3.woff2) format("woff2"),url(/assets/Merriweather-LightItalic-1f79f78c181a7a35d38ed8a5bee789c2680726e3b74ddaebc3486af3af749235.woff) format("woff");font-weight:300;font-style:italic;font-display:optional}@font-face{font-family:'Batang';src:url(/assets/Batang-bbbbbe277f4e2bd33819a38b51e599824aed97db7b51b0aa6bf683bf40b171ce.woff2) format("woff2"),url(/assets/Batang-d1c9b135751404713e2fdc6fcd9f6d9d534d2a8bfc11e57fe05a7aa13e883838.woff) format("woff");font-weight:normal;font-style:normal;font-display:auto;unicode-range:U+AC00-D7A3, U+1100-11FF, U+3130-318F, U+A960-A97F, U+D7B0-D7FF}html,body{font-family:"Merriweather", Georgia, serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";font-size:1em;text-rendering:optimizeLegibility;-webkit-font-kerning:normal;font-kerning:normal;-webkit-font-smoothing:antialiased;line-height:1.5}html[lang="ko-KR"] body{font-family:"Batang", "Merriweather", Georgia, serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";font-weight:lighter}html[lang="ko-KR"] a.readmore,html[lang="ko-KR"] section>h1,html[lang="ko-KR"] article p em,html[lang="ko-KR"] article p dfn,html[lang="ko-KR"] cite,html[lang="zh-Hans"] a.readmore,html[lang="zh-Hans"] section>h1,html[lang="zh-Hans"] article p em,html[lang="zh-Hans"] article p dfn,html[lang="zh-Hans"] cite{font-style:normal;font-weight:bold}html[lang="ko-KR"] [role="article"] header .byline,html[lang="zh-Hans"] [role="article"] header .byline{font-style:normal}html[lang="ko-KR"] .archive ol li time,html[lang="ko-KR"] .archive ul li time,html[lang="zh-Hans"] .archive ol li time,html[lang="zh-Hans"] .archive ul li time{font-style:normal;font-weight:bold}html[lang="ko-KR"] #promotion h4,html[lang="zh-Hans"] #promotion h4{font-style:normal;font-weight:bold}html[lang="ko-KR"] .highlight span,html[lang="zh-Hans"] .highlight span{font-style:normal !important}h1,h2,h3,h4,h5,h6{font-family:-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";line-height:1.25em;margin:0}h1{font-size:2.25em}h2{font-size:2em}h3{font-size:1.75em}h4{font-size:1.5em}h5{font-size:1.25em}h6{font-size:1em}p{margin:0 0 0.75em}a{-webkit-transition:color 0.1s linear;-moz-transition:color 0.1s linear;transition:color 0.1s linear;text-decoration:none}a:hover{text-decoration:underline}a:active,a:focus{outline:none}p>small{font-size:inherit;font-variant:small-caps;text-transform:lowercase}p>code,li>code,td>code{user-select:all}pre{font-family:"Merriweather", Georgia, serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"}code,samp{font-family:Courier, Monaco, monospace;font-size:85%}pre code{font-size:80%}samp{white-space:pre;overflow:scroll;display:block;padding:0.5em 0}section>h1{font-family:"Merriweather", Georgia, serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";font-weight:300;font-style:italic;text-align:center;margin-bottom:2em;margin-top:2em;font-size:1.5em}article.excerpt h1{font-size:1.5em}a.readmore{font-style:italic}a:hover{text-decoration:underline}.admonition{border-left-width:4px;border-left-style:solid;padding:5px 40px;margin:1.5em 0;display:block;overflow:visible}.admonition p{margin:inherit}.admonition.info{background:#e9f5fc;border-left-color:#0088ff}.admonition.info a{color:#0088ff}.admonition.info:before{content:" ";background-image:url(/assets/info-f73d3a68c0c3bfa07e64909be26a8d512c2d50bf2729bf30f76d8b63250d0671.svg);background-size:24px 24px;width:24px;height:24px;position:absolute;display:block;margin-left:-54px;margin-top:10px;z-index:100}.admonition.warning{background:#fff8e8;border-left-color:#f9d780}.admonition.warning a{color:#f9d780}.admonition.warning:before{content:" ";background-image:url(/assets/warning-3c95534c564bbbc14e743b959d89593439a7acbdd38b46ef9c3e25127e23f47c.svg);background-size:24px 24px;width:24px;height:24px;position:absolute;display:block;margin-left:-54px;margin-top:10px;z-index:100}.admonition.error{background:#fcf2f6;border-left-color:#e62279}.admonition.error a{color:#e62279}.admonition.error:before{content:" ";background-image:url(/assets/error-0950677a2585decd810c2737096155b036dee719e35feb1c0c6ade04202daafc.svg);background-size:24px 24px;width:24px;height:24px;position:absolute;display:block;margin-left:-54px;margin-top:10px;z-index:100}@font-face{font-family:"NSHipster Icons";font-style:normal;font-weight:700;font-display:block;src:url(/assets/nshipster-e474c0004ccdeca4e27e7ae1320e0e04a943b0ea5348b336356b7ac223497fda.woff2) format("woff2"),url(/assets/nshipster-743868430209628f9d7933ea65c7e31cdf597e9a27d01d372c33fc501f4c6722.woff) format("woff")}[class^="icon-"],[class*=" icon-"]{font-family:"NSHipster Icons" !important;speak:none;font-style:normal;font-weight:normal;font-variant:normal;text-transform:none;line-height:1;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.icon-warning:before{content:"\e900"}.icon-error:before{content:"\e901"}.icon-info:before{content:"\e902"}.icon-podcasts:before{content:"\e903"}.icon-wechat:before{content:"\e904"}.icon-sinaweibo:before{content:"\e905"}.icon-feed:before{content:"\e906"}.icon-youtube:before{content:"\e908"}.icon-apple:before{content:"\f8ff"}.icon-facebook:before{content:"\e90a"}.icon-github:before{content:"\e90b"}.icon-twitter:before{content:"\e90c"}.icon-googleplus:before{content:"\e90d"}.icon-swift:before{content:"\e90e"}.icon-nc:before{content:"\e90f"}.icon-cc:before{content:"\e907"}.icon-by:before{content:"\e911"}.icon-command:before{content:"\2318"}.icon-shift:before{content:"\21e7"}.icon-ctrl:before{content:"\2303"}.icon-opt:before{content:"\2325"}html,body{margin:0}body{padding:env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left)}hr{border-bottom:1px solid #dddddd;border-left:none;border-right:none;border-top:none;margin:1.5em 0}img{margin:0;max-width:100%}video{margin:0 auto;max-width:100%;display:block}blockquote{border-left:2px solid #ddd;color:#595959;margin:1.5em 0;padding-left:0.75em}cite{color:#737373;font-style:italic}cite:before{content:"— "}table{border-collapse:collapse;margin:0.75em 0;table-layout:fixed;width:100%}th{border-bottom:1px solid #b7b7b7;font-weight:bold;padding:0.75em 0;text-align:left}td{border-bottom:1px solid #dddddd;padding:0.75em 0}tr,td,th{vertical-align:middle}ul,ol{margin:0;padding:0;list-style-type:none}dl{margin-bottom:0.75em}dl dt{font-weight:bold;margin-top:0.75em}dl dd{margin:0}.container{max-width:100%;margin-left:auto;margin-right:auto;max-width:960px;margin:0 auto;padding:2em}.container:after{content:"";display:table;clear:both}.container section{display:block;max-width:100%;margin-left:auto;margin-right:auto;margin-bottom:2em;padding-bottom:1em}.container section:after{content:"";display:table;clear:both;content:"";display:table;clear:both}[role="banner"]{display:block;margin-bottom:2em}[role="banner"]:after{content:"";display:table;clear:both}[role="banner"] #logo{float:left;display:block;margin-right:2.35765%;-webkit-touch-callout:none;-webkit-user-select:none;-khtml-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;font-size:1em;height:6em}[role="banner"] #logo:last-child{margin-right:0}[role="banner"] #logo a{display:block}[role="banner"] #logo a:after{content:"";display:table;clear:both}[role="banner"] #logo svg{width:146px;height:84px;overflow:visible;margin-left:-3px}[role="banner"] #logo svg #mustache{position:absolute;transform:rotate(0) scale(1);transform-origin:50% 70% 0;transition:transform 1s}[role="banner"] #logo svg:hover,[role="banner"] #logo svg.animated{position:relative;z-index:2}[role="banner"] #logo svg:hover #mustache,[role="banner"] #logo svg.animated #mustache{animation:twirl 1s ease-in-out}[role="banner"] nav{float:left;display:block;margin-right:2.35765%;width:40.29137%}[role="banner"] nav:last-child{margin-right:0}[role="banner"] nav li{display:block;float:left;display:block;margin-right:10.1484%;width:26.56773%}[role="banner"] nav li:last-child{margin-right:0}[role="banner"] nav li a{font-size:1.5em;display:block;text-align:center;padding-top:14px}[role="banner"] nav li a.current{padding-top:10px;border-top:4px #ff8000 solid}[role="banner"] nav li a:hover{padding-top:10px;border-top:4px #ffc080 solid}[role="banner"] form{float:left;display:block;margin-right:2.35765%;width:23.23176%;margin-left:8.5298%;margin-right:0;float:right}[role="banner"] form:last-child{margin-right:0}[role="banner"] form input{height:2.5em !important}#latest h1,#announcement h1{margin-bottom:0.5em}#latest article,#announcement article{font-size:125%}#announcement{background-color:rgba(255,128,0,0.2);margin-left:-1em;margin-right:-1em;padding:1em}#recent article{float:left;display:block;margin-right:2%;width:30%;min-height:15em}#recent article:after{content:"";display:table;clear:both}#recent article:last-child{margin-right:0}#recent article p{display:-webkit-box;overflow:hidden;-webkit-line-clamp:5;-webkit-box-orient:vertical;text-overflow:-o-ellipsis-lastline}#popular article{float:left;display:block;margin-right:2.35765%;width:48.82117%}#popular article:last-child,#popular article:nth-of-type(2n){margin-right:0}#popular article p{display:-webkit-box;overflow:hidden;-webkit-line-clamp:5;-webkit-box-orient:vertical;text-overflow:-o-ellipsis-lastline}#merchandise{margin-top:-30px}#merchandise h1{margin-bottom:15px}#revisions{border-top:1px #ccc solid;padding:1em 0 0}#follow{border-top:1px #cccccc solid;padding:1em 0}#follow ul{float:left;display:block;margin-right:2.35765%;width:31.76157%}#follow ul:last-child{margin-right:0}#follow ul li{float:left;display:block;margin-right:7.42297%;width:19.43277%;font-size:2em}#follow ul li:last-child,#follow ul li:nth-of-type(4n){margin-right:0}#follow ul li a:hover{text-decoration:none}#follow form{float:left;display:block;margin-right:2.35765%;width:57.35098%;margin-left:8.5298%;margin-right:0}#follow form:last-child{margin-right:0}#follow form input[type="email"]{float:left;display:block;margin-right:3.57866%;width:61.158%}#follow form input[type="email"]:last-child{margin-right:0}#follow form input[type="submit"]{float:left;display:block;margin-right:3.57866%;width:35.26334%;border-radius:10px;background:#ff8000;font-size:0.75em;padding:15px 0}#follow form input[type="submit"]:last-child{margin-right:0}article.author{padding-top:2em}article.author header{min-height:200px}article.author header .avatar{float:left;display:block;margin-right:5%;width:20%}article.author header .avatar:last-child{margin-right:0}article.author header h1{margin-bottom:1em}section h1{margin-bottom:1em}[role="article"]{font-size:125%;margin-bottom:1em;overflow-x:hidden}[role="article"] table{overflow:scroll;margin:2em 0}[role="article"] table caption{margin:2em 0 1em 0}[role="article"] div.highlight{background:#282a36;border-radius:5px;overflow:auto;padding:0 1em;margin-bottom:1em}[role="article"] header{display:block;text-align:center;margin-bottom:3em}[role="article"] header:after{content:"";display:table;clear:both}[role="article"] header h1{font-size:3em;line-height:1em;margin-bottom:0.5em;overflow-wrap:break-word}[role="article"] header .byline{font-size:1.25em;font-family:"Merriweather", Georgia, serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";font-style:italic;font-weight:300;color:#a3a39e}[role="article"] header .byline a,[role="article"] header .byline span{white-space:nowrap}[role="article"] header .byline time{white-space:nowrap}[role="article"] .content{margin-bottom:5em}[role="article"] .content h1,[role="article"] .content h2,[role="article"] .content h3,[role="article"] .content h4,[role="article"] .content h5{margin:2em 0 1em 0}[role="article"] .content h3{font-size:1.25em}[role="article"] .content h4{font-size:1em}[role="article"] .content hr{width:40%;margin:2em auto}[role="article"] .content object,[role="article"] .content embed,[role="article"] .content figure,[role="article"] .content svg{margin:1em auto;display:block;width:auto}[role="article"] .content img{margin:1em auto;display:block}[role="article"] .content ul,[role="article"] .content ol{margin:1.5em 0;padding:0 3em}[role="article"] .content ul li,[role="article"] .content ol li{list-style:disc;margin-bottom:1em}[role="article"] .content figure{text-align:center}[role="article"] .content del{color:rgba(34,34,32,0.5)}[role="article"] .content ins{background-color:rgba(255,128,0,0.2);text-decoration:none}[role="article"] .content blockquote{margin:2em;margin-right:4em;border-left:3px #ff8000 solid}[role="article"] .content blockquote cite{margin-top:1em;display:block}[role="article"] .content table thead th{text-align:center}[role="article"] .content table td{padding:1em}[role="article"] sup{font-size:50%;margin-right:-0.5em}[role="article"] footer .contributor{float:left;display:block;margin-right:2.35765%;width:48.82117%;border-top:1px #cccccc solid;padding:1em 0}[role="article"] footer .contributor:last-child,[role="article"] footer .contributor:nth-child(2n){margin-right:0}[role="article"] footer .contributor:nth-child(2n+1){clear:left}[role="article"] footer .contributor:only-child{width:100%}[role="article"] footer .contributor:only-child .avatar{padding:0 1em}[role="article"] footer .contributor .avatar{float:left;display:block;margin-right:4.82916%;width:30.11389%}[role="article"] footer .contributor .avatar:last-child{margin-right:0}[role="article"] footer .contributor .details{float:left;display:block;margin-right:4.82916%;width:65.05695%;margin-right:0;margin-top:1em}[role="article"] footer .contributor .details:last-child{margin-right:0}[role="article"] footer .contributor .details span{font-weight:700}[role="article"] footer .contributor .details p{font-size:0.75em;margin-top:1em}[role="article"] footer small{display:block;font-size:1em;font-weight:700;color:#777777;text-transform:lowercase;font-family:-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";font-variant:small-caps;margin-bottom:1em}[role="complementary"]{display:block}[role="complementary"]:after{content:"";display:table;clear:both}[role="complementary"] #continue{float:left;display:block}[role="complementary"] #continue:last-child{margin-right:0}[role="complementary"] #continue h1{margin-bottom:0.5em}[role="complementary"] #continue p{font-size:0.75em}[role="contentinfo"]{text-align:center;margin-top:2em;padding:1em}.avatar{-webkit-touch-callout:none;-webkit-user-select:none;-khtml-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;max-width:200px;max-height:200px;border-radius:50%;pointer-events:none;user-select:none}#contributors li{float:left;display:block;margin-right:2.35765%;width:23.23176%;margin-bottom:1em}#contributors li:last-child{margin-right:0}#contributors li:nth-of-type(4){margin-right:0}#contributors li .avatar{display:block;margin:0 auto 1em auto;width:70%}#contributors li a{text-align:center;display:block}.archive dl{float:left;display:block;margin-right:2.5%;width:30%}.archive dl:last-child,.archive dl:nth-of-type(3),.archive dl:nth-of-type(4),.archive dl:nth-of-type(6){margin-right:0}.archive ol,.archive ul{list-style:none}.archive ol li,.archive ul li{margin:2em 0}.archive ol li span,.archive ol li time{display:block}.archive ul li span,.archive ul li time{display:block}.archive ol li .title,.archive ul li .title{font-family:-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";font-weight:700;font-size:1.25em}.archive ol li time,.archive ul li time{white-space:nowrap;font-style:italic;font-weight:300;margin-bottom:1em}#sharing ul{display:block;float:right}#sharing ul:after{content:"";display:table;clear:both}#sharing li{font-size:1.5em;display:block;margin:0.5em;float:left}#sharing li a:hover{text-decoration:none;color:#4c3150 !important}.archive ul>li,[role="contentinfo"] ul>li,#related ul>li{list-style:disc inside !important;display:table-row}.archive ul>li:before,[role="contentinfo"] ul>li:before,#related ul>li:before{content:"●";display:table-cell;padding-right:0.5em}.archive dl,[role="contentinfo"] dl,#related dl{padding:0 0.5em}.archive dl dt,[role="contentinfo"] dl dt,#related dl dt{font-size:1.5em;margin-bottom:1em}.archive dl dd,[role="contentinfo"] dl dd,#related dl dd{list-style:disc inside !important;display:table-row}.archive dl dd:before,[role="contentinfo"] dl dd:before,#related dl dd:before{content:"●";display:table-cell;padding-right:0.5em}#publications .books{display:flex}#publications .book{flex:1}#publications .book img{display:block;margin:0 auto;width:200px;border:4px transparent solid;transition:0.25s ease-in-out border-color}#publications .book img:hover{padding:0;border:4px #ff8000 solid}.tagline{clear:both;font-weight:300;margin:1em 0;padding-top:1em}.highlight-group{margin-top:1em}.language-toggle{display:block}.language-toggle:after{content:"";display:table;clear:both}.language-toggle a{cursor:pointer;display:block;float:right;padding-left:0.5em;color:#222220;opacity:0.25;text-decoration:none;transition:opacity 0.5s}.language-toggle a:hover{opacity:0.5}.language-toggle a.active{opacity:1}#promotion .book img{margin:0}#promotion h3{font-family:"Merriweather", Georgia, serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"}#promotion h4{font-family:"Merriweather", Georgia, serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";font-style:italic;font-weight:300;margin-bottom:1em}#promotion p{font-size:0.75em}#promotion a.buy{background:#ff8000;border-radius:10px;color:#ffffff !important;font-family:-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";font-weight:700;margin-top:1em;padding:15px;text-align:center;display:inline-block}#promotion a.buy:hover{text-decoration:none !important}#promotion.home{margin-top:-15px;padding:35px 44px;background:#eeeeee;border-radius:20px}#promotion.home p{font-size:1em}#promotion.home small{display:block;font-size:1.2em;font-weight:700;margin-left:5px;color:#777777;text-transform:lowercase;font-family:-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";font-variant:small-caps}table#status{table-layout:fixed;margin-top:2em}table#status caption{padding:1em 0;color:#777777}table#status .version{text-align:center}table#status .version em{color:#777777}table#customplaygrounddisplayconvertible-categories{table-layout:auto}table#customplaygrounddisplayconvertible-categories tbody th{padding-left:10px;text-align:center}table#customplaygrounddisplayconvertible-categories ul{padding:0 0 0 20px}table#customplaygrounddisplayconvertible-categories ul li{margin:0}table#customplaygrounddisplayconvertible-categories td img{margin:0}@media screen and (max-width: 600px){table#customplaygrounddisplayconvertible-categories thead tr th:last-child,table#customplaygrounddisplayconvertible-categories tbody tr td:last-child{display:none}}div.highlight{background:#282a36;border:1px transparent solid}div.highlight code{color:#f8f8f2}.highlight .hll,.highlight .s,.highlight .sa,.highlight .sb,.highlight .sc,.highlight .dl,.highlight .sd,.highlight .s2,.highlight .se,.highlight .sh,.highlight .si,.highlight .sx,.highlight .sr,.highlight .s1,.highlight .ss{color:#f1fa8c}.highlight .go{color:#747683}.highlight .err,.highlight .g,.highlight .l,.highlight .n,.highlight .x,.highlight .p,.highlight .ge,.highlight .gr,.highlight .gh,.highlight .gi,.highlight .gp,.highlight .gs,.highlight .gu,.highlight .gt,.highlight .ld,.highlight .no,.highlight .nd,.highlight .ni,.highlight .ne,.highlight .nn,.highlight .nx,.highlight .py,.highlight .w,.highlight .bp{color:#f8f8f2}.highlight .gh,.highlight .gi,.highlight .gu{font-weight:bold}.highlight .ge{text-decoration:underline}.highlight .c,.highlight .ch,.highlight .cm,.highlight .cpf,.highlight .c1,.highlight .cs{color:#bfc6d8}.highlight .kd,.highlight .kt,.highlight .nb,.highlight .nl,.highlight .nv,.highlight .vc,.highlight .vg,.highlight .vi,.highlight .vm{color:#8be9fd}.highlight .na,.highlight .nc,.highlight .nf,.highlight .fm{color:#ff8000}.highlight .k,.highlight .o,.highlight .cp,.highlight .kc,.highlight .kn,.highlight .kp,.highlight .kr,.highlight .nt,.highlight .ow{color:#ff79c6}.highlight .m,.highlight .mb,.highlight .mf,.highlight .mh,.highlight .mi,.highlight .mo,.highlight .il{color:#bd93f9}.highlight .gd{color:#ff5555}button,input[type="submit"]{-moz-appearance:none;-ms-appearance:none;-o-appearance:none;-webkit-appearance:none;-webkit-font-smoothing:antialiased;appearance:none;background-color:#ff8000;border-radius:5px;border:none;color:white;cursor:pointer;display:inline-block;font-size:1em;font-weight:bold;line-height:1;padding:0.75em 1em;text-decoration:none;transition:background-color 0.25s;user-select:none;vertical-align:middle;white-space:nowrap}button:hover,input[type="submit"]:hover{background-color:#cc6600;color:white}@media screen and (max-width: 480px){.container{padding:1em}#recent article{width:100%;min-height:7em;margin-bottom:1em}#popular article{width:100%;margin-bottom:1em}#follow ul{width:100%}#follow form{width:100%;margin-left:0;margin-top:2em}[role="article"]{font-size:75%}[role="article"] .content{overflow:hidden}[role="article"] .content ul,[role="article"] .content ol{padding:0}[role="article"] .content blockquote{margin:1em 0}[role="article"] footer .contributor{width:100%;margin-bottom:1em}[role="article"] footer .contributor:not(:first-child){border-top:none}[role="article"] footer .contributor .avatar{padding:0}[role="article"] footer .contributor .details{margin-top:0}[role="complementary"] #continue,[role="complementary"] #related{width:100%}[role="complementary"] #related{margin-top:1em}[role="complementary"] #related li{font-size:1em}#sharing ul{width:100%}#sharing li{display:none !important;margin:0;float:left;display:block;margin-right:2.35765%;width:23.23176%}#sharing li:last-child,#sharing li:nth-child(4){margin-right:0}#sharing li:nth-child(5){clear:left}#sharing li a,#sharing li i{display:block;margin:0 auto;font-size:1.25em}.tagline{font-size:110%}#contributors{display:none}#promotion .book img{margin:0 auto}#recent article{float:none;display:block;width:100%}#recent article:last-child,#recent article:nth-of-type(2n){margin-right:0}}@media screen and (max-width: 768px){[role="article"] header h1{font-size:8vw}[role="banner"]{margin-bottom:2em}[role="banner"] #logo{margin:0 auto 2em auto}[role="banner"] #logo svg{width:100% !important}[role="banner"] #logo,[role="banner"] nav{width:100%}form{display:none}#follow form input[type="submit"]{font-size:0.67em}[role="article"]{font-size:100%}.archive dl{width:100%;margin:0;float:none}#recent article{float:left;display:block;margin-right:2.35765%;width:48.82117%;min-height:12em}#recent article:last-child,#recent article:nth-of-type(3n){margin-right:0}}@media (hover: none){#logo #mustache{animation-iteration-count:1}}@media (inverted-colors){*{text-shadow:none !important;box-shadow:none !important}img{filter:invert(100%)}}@media (monochrome) and (false), print and (false), (prefers-contrast: high), screen and (-ms-high-contrast: active){html{border-top-color:black}html body{background:white}html body #logo a:hover{background:transparent !important}html body #logo #ns{fill:white;stroke:black;stroke-width:10px}html body #logo #mustache{fill:black}html body a{transition:none}html body a,html body a:visited{text-decoration:underline;color:black !important}html body a:hover{text-decoration:none}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6,html body p,html body li,html body dt,html body dd,html body span{color:black !important}html body div.highlight{color:black;background:#fff !important;border:2px black solid}html body div.highlight code,html body div.highlight code span{color:black !important}html body div.highlight .c,html body div.highlight .ch,html body div.highlight .cm,html body div.highlight .cpf,html body div.highlight .c1,html body div.highlight .cs,html body div.highlight .ge,html body div.highlight .s,html body div.highlight .sa,html body div.highlight .sb,html body div.highlight .sc,html body div.highlight .dl,html body div.highlight .sd,html body div.highlight .s2,html body div.highlight .sh,html body div.highlight .sx,html body div.highlight .sr,html body div.highlight .s1,html body div.highlight .ss{font-style:italic}html body div.highlight .k,html body div.highlight .gh,html body div.highlight .gp,html body div.highlight .gs,html body div.highlight .gu,html body div.highlight .kc,html body div.highlight .kd,html body div.highlight .kn,html body div.highlight .kr,html body div.highlight .nc,html body div.highlight .ni,html body div.highlight .ne,html body div.highlight .nn,html body div.highlight .nt,html body div.highlight .ow{font-weight:bold}html body div.highlight .se,html body div.highlight .si{font-weight:bold;font-style:italic}html body .admonition{background:white !important;border:2px black solid !important;border-radius:5px}html body .admonition:before{visibility:hidden}html body blockquote{border-left-color:black !important;color:black}}@media (prefers-color-scheme: dark){body{background:#2c2a28 !important;color:#f8f8f2 !important}body blockquote{color:#f8f8f2 !important}body div.highlight{border:1px #f8f8f2 solid !important}body .language-toggle a{color:#f8f8f2 !important}body .info{background:#333c44 !important}body .warning{background:#484131 !important}body .error{background:#592e41 !important}img[src$=".svg"]{filter:invert(100%)}}@media (prefers-contrast: high), screen and (-ms-high-contrast: active){a{transition:none}a,a:visited{text-decoration:underline;color:black !important}h1,h2,h3,h4,h5,h6,p,li,dt,dd,span{color:black !important}h1 a:hover,h2 a:hover,h3 a:hover,h4 a:hover,h5 a:hover,h6 a:hover,p a:hover,li a:hover,dt a:hover,dd a:hover,span a:hover{text-decoration:none;background:black;color:white !important}}@media (prefers-reduced-motion: reduce){#logo #mustache{animation:none !important}}@media print{@page{margin:0.5in}html{border-top:none}html body{font-size:10pt !important}[role="banner"]{position:absolute}[role="banner"] #logo svg{width:1in;height:1in}article header{padding-top:1.5in}img,p,blockquote,aside,ul,ol,table,figure,.highlight-group{page-break-inside:avoid}h1,h2,h3,h4,h5,h6{page-break-after:avoid}img{max-width:100% !important}p a{word-wrap:break-word}p a[href^="#"]:after{display:none}p a[href^="http://"]:after,p a[href^="https://"]:after{content:" (" attr(href) ")";float:footnote;text-decoration:none;color:#333}[title]::after{content:attr(title);float:footnote}.highlight-group a{font-size:50%}div.highlight{border-radius:5px;border:2px black solid}[role="complementary"]{display:none}.admonition::before{visibility:hidden}}@media print and (color){*{-webkit-print-color-adjust:exact;print-color-adjust:exact}}*{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}::selection{background:rgba(76,49,80,0.5);color:#ffffff}::-moz-selection{background:rgba(76,49,80,0.5);color:#ffffff}#type-encodings tr>td:first-child,#method-encodings tr>td:first-child{width:12em;padding-left:3em}@media screen and (max-width: 480px){#gpuimage table{font-size:50%}}#gpuimage #gpuimage-benchmarks td{text-align:center}#gpuimage #gpuimage-benchmarks td:first-child{text-align:left}#gpuimage #gpuimage-benchmarks td:last-child{text-align:right}#gpuimage #gpuimage-filters td{vertical-align:top;font-size:75%}#gpuimage blockquote{font-size:75%}table.core-data-versus-nskeyedarchiver td{text-align:center}table.core-data-versus-nskeyedarchiver td:first-child{text-align:left;font-weight:bold}table#xcode-key-bindings-modifiers{width:100%}table#xcode-key-bindings-modifiers td,table#xcode-key-bindings-modifiers th{width:20%;text-align:center}#cfstringtransform table{display:block}#cfstringtransform table td:first-child{width:60%}#icloud header time{background-color:rgba(255,128,0,0.2)}
+      /*# sourceMappingURL=/assets/source-maps/screen.scss.map */
+      /*# sourceURL=assets/css/screen.scss */
+    </style>
+    <link rel="apple-touch-icon" sizes="180x180" href="https://nshipster.com/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://nshipster.com/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://nshipster.com/favicon-16x16.png">
+    <link rel="manifest" href="https://nshipster.com/site.webmanifest">
+    <link rel="mask-icon" href="https://nshipster.com/safari-pinned-tab.svg" color="#292724">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="NSHipster">
+    <meta name="application-name" content="NSHipster">
+    <meta name="msapplication-TileColor" content="#f8f7f5">
+    <meta name="theme-color" content="#f8f7f5">
+    <link rel="author" type="text/plain" href="https://nshipster.com/humans.txt">
+    <link rel="license" href="https://creativecommons.org/licenses/by-nc/4.0/">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@NSHipster">
+    <meta name="twitter:title" content="WKWebView">
+    <meta name="twitter:description" content="iOS has a complicated relationship with the web. And it goes back to the very inception of the platform over a decade ago.
+">
+    <meta property="twitter:account_id" content="629523445">
+    <meta property="og:site_name" content="NSHipster">
+    <meta property="og:image" content="https://nshipster.com/logo.png">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="WKWebView">
+    <meta property="og:url" content="https://nshipster.com/wkwebview/">
+    <meta property="og:description" content="iOS has a complicated relationship with the web. And it goes back to the very inception of the platform over a decade ago.
+">
+    <meta property="article:published_time" content="2014-08-24T00:00:00-07:00">
+    <meta property="article:modified_time" content="2018-11-19T10:03:36-08:00">
+    <meta property="article:tag" content="Cocoa">
+    <meta property="article:publisher" content="https://www.facebook.com/NSHipster">
+    <link rel="next" href="https://nshipster.com/swift-default-protocol-implementations/">
+    <link rel="prev" href="https://nshipster.com/swift-literals/">
+  </head>
+  <body>
+    <div class="container">
+      <header role="banner">
+        <h1 id="logo">
+          <a href="https://nshipster.com/" title="NSHipster">
+            <!--?xml version="1.0"?-->
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 474.4 266.34">
+                <g id="ns">
+                  <path d="M16.05 5.37h68.38l88.78 157.52h.72V5.37h62.64V261H168.2L79.42 101.67h-.72V261H16.05z"></path>
+                  <path d="M294.78 175.06c1.43 30.07 20 39.73 48.33 39.73 20 0 40.81-7.16 40.81-26.13 0-22.55-36.52-26.85-73.39-37.23-36.52-10.38-74.82-26.85-74.82-73.75C235.71 21.84 291.91 0 339.88 0c50.84 0 102 24.7 102.39 82.34h-66.59c1.08-23.27-20.76-30.79-41.17-30.79-14.32 0-32.21 5-32.21 21.84 0 19.69 36.87 23.27 74.1 33.65 36.87 10.38 74.1 27.56 74.1 73.74 0 64.8-55.13 85.56-111.33 85.56-58.71 0-110.62-25.77-111-91.28z"></path>
+                </g>
+                <g id="mustache">
+                  <path d="M168.07 104.61c-59.6 3-113.84 79.27-168.07 12.52 0 90 141.25 181.77 237.2 97.14 95.36 84 237.2-7.75 237.2-97.14-74.5 91.78-149-85.83-237.2 26.81-23.84-31.58-47.08-40.52-69.13-39.33z"></path>
+                </g>
+              </svg>
+            </a>
+          </h1>
+        </header>
+        <main>
+          <article role="article" itemscope="" itemtype="https://schema.org/Article">
+            <header role="heading">
+              <h1 class="title" itemprop="name">
+                <a href="https://nshipster.com/wkwebview/">WKWeb​View</a>
+              </h1>
+              <div class="byline">
+                <span>
+                  Written by <a class="author" href="https://nshipster.com/authors/mattt/">Mattt</a> — <wbr>
+                </span>
+                <span>
+                </span>
+                <time datetime="2014-08-24T00:00:00-07:00" itemprop="datePublished" hidden="" aria-hidden="true">August 24<sup>th</sup>, 2014</time>
+                <time datetime="2018-07-25T00:00:00-07:00" itemprop="dateModified">July 25<sup>th</sup>, 2018</time>
+                (<a href="https://nshipster.com/wkwebview/#revisions">revised</a>)
+              </div>
+              <link itemprop="image" href="https://nshipster.com/logo.png">
+              <meta itemprop="headline" content="WKWebView">
+              <div itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization" hidden="" aria-hidden="true">
+                <meta itemprop="name" content="NSHipster">
+                <meta itemprop="logo" content="https://nshipster.com/logo.png">
+              </div>
+            </header>
+            <div class="content" itemprop="articleBody">
+              <p>iOS has a complicated relationship with the web.
+                And it goes back to the very inception of the platform over a decade ago.</p>
+              <p>Although the design of the first iPhone seems like a foregone conclusion today,
+                the iconic touchscreen device we know and love today
+                was just one option on the table at the time.
+                Early prototypes explored the use of a physical keyboard
+                and a touchscreen + stylus combo,
+                with screen dimensions going up to 5×7”.
+                Even the iPod click wheel was a serious contender for a time.</p>
+              <p>But perhaps the most significant early decision to be made involved software,
+                not hardware.</p>
+              <p>How should the iPhone run software?
+                Apps, like on macOS?
+                Or as web pages, using Safari?
+                That choice to fork macOS and build iPhoneOS had widespread implications
+                and remains a contentious decision to this day.</p>
+              <p>Consider this infamous line from Steve Jobs’ WWDC 2007 keynote:</p>
+              <blockquote>
+                <p>The full Safari engine is inside of iPhone.
+                  And so, you can write amazing Web 2.0 and Ajax apps
+                  that look exactly and behave exactly like apps on the iPhone.
+                  And these apps can integrate perfectly with iPhone services.
+                  They can make a call, they can send an email,
+                  they can look up a location on Google Maps.</p>
+              </blockquote>
+              <p>The web had long been a second-class citizen on iOS,
+                which is ironic since the iPhone is largely responsible
+                for the mobile web as it exists today.
+                <code>UIWeb<wbr>View</code> was massive and clunky and leaked memory like a sieve.
+              It lagged behind Mobile Safari,
+              unable to take advantage of its faster JavaScript and rendering engines.</p>
+            <p>However, all of this changed with the introduction of <code>WKWeb<wbr>View</code>
+            and the rest of the <code>Web<wbr>Kit</code> framework.</p>
+        <hr>
+        <p><code>WKWeb<wbr>View</code> is the centerpiece of the modern WebKit API
+        introduced in iOS 8 &amp; macOS Yosemite.
+        It replaces <code>UIWeb<wbr>View</code> in UIKit and <code>Web<wbr>View</code> in AppKit,
+    offering a consistent API across the two platforms.</p>
+  <p>Boasting responsive 60fps scrolling,
+    built-in gestures,
+    streamlined communication between app and webpage,
+    and the same JavaScript engine as Safari,
+    <code>WKWeb<wbr>View</code> was one of the most significant announcements at WWDC 2014.</p>
+<p>What was once a single class and protocol with <code>UIWeb<wbr>View</code> &amp; <code>UIWeb<wbr>View<wbr>Delegate</code>
+has been factored out into 14 classes and 3 protocols in the WebKit framework.
+Don’t be alarmed by the huge jump in complexity, though —
+this new architecture is much cleaner,
+and allows for a ton of new features.</p>
+<h2 id="migrating-from-uiwebview--webview-to-wkwebview">Migrating from UIWebView / WebView to WKWebView</h2>
+<p><code>WKWeb<wbr>View</code> has been the preferred API since iOS 8.
+But if your app <em>still</em> hasn’t made the switch,
+be advised that
+<strong><code class="highlighter-rouge">UIWebView</code> and <code class="highlighter-rouge">WebView</code> are formally deprecated
+  in iOS 12 and macOS Mojave</strong>,
+and you should update to <code>WKWeb<wbr>View</code> as soon as possible.</p>
+<p>To help make that transition,
+  here’s a comparison of the APIs of <code>UIWeb<wbr>View</code> and <code>WKWeb<wbr>View</code>:</p>
+<table>
+  <thead>
+    <tr>
+      <th>UIWebView</th>
+      <th>WKWebView</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>var scroll<wbr>View: UIScroll<wbr>View { get }</code></td>
+  <td><code>var scroll<wbr>View: UIScroll<wbr>View { get }</code></td>
+</tr>
+<tr>
+  <td>&nbsp;</td>
+  <td><code>var configuration: WKWeb<wbr>View<wbr>Configuration { get }</code></td>
+</tr>
+<tr>
+  <td><code>var delegate: UIWeb<wbr>View<wbr>Delegate?</code></td>
+<td><code>var UIDelegate: WKUIDelegate?</code></td>
+</tr>
+<tr>
+  <td>&nbsp;</td>
+  <td><code>var navigation<wbr>Delegate: WKNavigation<wbr>Delegate?</code></td>
+</tr>
+<tr>
+  <td>&nbsp;</td>
+  <td><code>var back<wbr>Forward<wbr>List: WKBack<wbr>Forward<wbr>List { get }</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="loading">Loading</h3>
+<table>
+  <thead>
+    <tr>
+      <th>UIWebView</th>
+      <th>WKWebView</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>func load<wbr>Request(request: URLRequest)</code></td>
+    <td><code>func load(_ request: URLRequest) -&gt; WKNavigation?</code></td>
+  </tr>
+  <tr>
+    <td><code>func load<wbr>HTMLString(string: String, base<wbr>URL: URL?)</code></td>
+<td><code>func load<wbr>HTMLString(_: String, base<wbr>URL: URL?) -&gt; WKNavigation?</code></td>
+</tr>
+<tr>
+  <td><code>func load<wbr>Data(_ data: Data, mime<wbr>Type: String, character<wbr>Encoding<wbr>Name: String, base<wbr>URL: URL) -&gt; WKNavigation?</code></td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+  <td>&nbsp;</td>
+  <td><code>var estimated<wbr>Progress: Double { get }</code></td>
+</tr>
+<tr>
+  <td>&nbsp;</td>
+  <td><code>var has<wbr>Only<wbr>Secure<wbr>Content: Bool { get }</code></td>
+</tr>
+<tr>
+  <td><code>func reload()</code></td>
+  <td><code>func reload() -&gt; WKNavigation?</code></td>
+</tr>
+<tr>
+  <td>&nbsp;</td>
+  <td><code>func reload<wbr>From<wbr>Origin(Any?) -&gt; WKNavigation?</code></td>
+</tr>
+<tr>
+  <td><code>func stop<wbr>Loading()</code></td>
+<td><code>func stop<wbr>Loading()</code></td>
+</tr>
+<tr>
+  <td><code>var request: URLRequest? { get }</code></td>
+  <td>&nbsp;</td>
+</tr>
+<tr>
+  <td>&nbsp;</td>
+  <td><code>var URL: URL? { get }</code></td>
+</tr>
+<tr>
+  <td>&nbsp;</td>
+  <td><code>var title: String? { get }</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="history">History</h3>
+<table>
+  <thead>
+    <tr>
+      <th>UIWebView</th>
+      <th>WKWebView</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>&nbsp;</td>
+      <td><code>func go<wbr>To<wbr>Back<wbr>Forward<wbr>List<wbr>Item(item: WKBack<wbr>Forward<wbr>List<wbr>Item) -&gt; WKNavigation?</code></td>
+</tr>
+<tr>
+  <td><code>func go<wbr>Back()</code></td>
+<td><code>func go<wbr>Back() -&gt; WKNavigation?</code></td>
+</tr>
+<tr>
+  <td><code>func go<wbr>Forward()</code></td>
+<td><code>func go<wbr>Forward() -&gt; WKNavigation?</code></td>
+</tr>
+<tr>
+  <td><code>var can<wbr>Go<wbr>Back: Bool { get }</code></td>
+<td><code>var can<wbr>Go<wbr>Back: Bool { get }</code></td>
+</tr>
+<tr>
+  <td><code>var can<wbr>Go<wbr>Forward: Bool { get }</code></td>
+<td><code>var can<wbr>Go<wbr>Forward: Bool { get }</code></td>
+</tr>
+<tr>
+  <td><code>var loading: Bool { get }</code></td>
+  <td><code>var loading: Bool { get }</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="javascript-evaluation">Javascript Evaluation</h3>
+<table>
+  <thead>
+    <tr>
+      <th>UIWebView</th>
+      <th>WKWebView</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>func string<wbr>By<wbr>Evaluating<wbr>Java<wbr>Script<wbr>From<wbr>String(script: String) -&gt; String</code></td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+  <td>&nbsp;</td>
+  <td><code>func evaluate<wbr>Java<wbr>Script(_ java<wbr>Script<wbr>String: String, completion<wbr>Handler: ((Any<wbr>Object?, NSError?) -&gt; Void)?)</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="miscellaneous">Miscellaneous</h3>
+<table>
+  <thead>
+    <tr>
+      <th>UIWebView</th>
+      <th>WKWebView</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>var keyboard<wbr>Display<wbr>Requires<wbr>User<wbr>Action: Bool</code></td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+  <td><code>var scales<wbr>Page<wbr>To<wbr>Fit: Bool</code></td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+  <td>&nbsp;</td>
+  <td><code>var allows<wbr>Back<wbr>Forward<wbr>Navigation<wbr>Gestures: Bool</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="pagination">Pagination</h3>
+<p><code>WKWeb<wbr>View</code> currently lacks equivalent APIs for paginating content.</p>
+<ul>
+  <li><code>var pagination<wbr>Mode: UIWeb<wbr>Pagination<wbr>Mode</code></li>
+<li><code>var pagination<wbr>Breaking<wbr>Mode: UIWeb<wbr>Pagination<wbr>Breaking<wbr>Mode</code></li>
+<li><code>var page<wbr>Length: CGFloat</code></li>
+<li><code>var gap<wbr>Between<wbr>Pages: CGFloat</code></li>
+<li><code>var page<wbr>Count: Int { get }</code></li>
+</ul>
+<h3 id="refactored-into-wkwebviewconfiguration">Refactored into <code class="highlighter-rouge">WKWebViewConfiguration</code>
+</h3>
+<p>The following properties on <code>UIWeb<wbr>View</code>
+have been factored into a separate configuration object,
+which is passed into the initializer for <code>WKWeb<wbr>View</code>:</p>
+<ul>
+  <li><code>var allows<wbr>Inline<wbr>Media<wbr>Playback: Bool</code></li>
+<li><code>var allows<wbr>Air<wbr>Play<wbr>For<wbr>Media<wbr>Playback: Bool</code></li>
+<li><code>var media<wbr>Types<wbr>Requiring<wbr>User<wbr>Action<wbr>For<wbr>Playback: WKAudiovisual<wbr>Media<wbr>Types</code></li>
+<li><code>var suppresses<wbr>Incremental<wbr>Rendering: Bool</code></li>
+</ul>
+<hr>
+<h2 id="javascript-︎-swift-communication">JavaScript ↔︎ Swift Communication</h2>
+<p>One of the major improvements over <code>UIWeb<wbr>View</code>
+is how interaction and data can be passed back and forth
+between an app and its web content.</p>
+<h3 id="injecting-behavior-with-user-scripts">Injecting Behavior with User Scripts</h3>
+<p><code>WKUser<wbr>Script</code> allows JavaScript behavior to be injected
+at the start or end of document load.
+This powerful feature allows for web content to be manipulated
+in a safe and consistent way across page requests.</p>
+<p>As a simple example,
+  here’s how a user script can be injected
+  to change the background color of a web page:</p>
+<div class="highlight-group"><span class="language-toggle"><a data-lang="Swift" class="active">Swift</a></span><div class="language-swift highlighter-rouge">
+  <div class="highlight">
+    <pre class="highlight"><code data-lang="Swift"><span class="k">let</span> <span class="nv">source</span> <span class="o">=</span> <span class="s">"""
+    document.body.style.background = "</span><span class="err">#</span><span class="mi">777</span><span class="s">";
+"""</span>
+
+<span class="k">let</span> <span class="nv">userScript</span> <span class="o">=</span> <span class="kt">WKUserScript</span><span class="p">(</span><span class="nv">source</span><span class="p">:</span> <span class="n">source</span><span class="p">,</span>
+                              <span class="nv">injectionTime</span><span class="p">:</span> <span class="o">.</span><span class="n">atDocumentEnd</span><span class="p">,</span>
+                              <span class="nv">forMainFrameOnly</span><span class="p">:</span> <span class="kc">true</span><span class="p">)</span>
+
+<span class="k">let</span> <span class="nv">userContentController</span> <span class="o">=</span> <span class="kt">WKUserContentController</span><span class="p">()</span>
+<span class="n">userContentController</span><span class="o">.</span><span class="nf">addUserScript</span><span class="p">(</span><span class="n">userScript</span><span class="p">)</span>
+
+<span class="k">let</span> <span class="nv">configuration</span> <span class="o">=</span> <span class="kt">WKWebViewConfiguration</span><span class="p">()</span>
+<span class="n">configuration</span><span class="o">.</span><span class="n">userContentController</span> <span class="o">=</span> <span class="n">userContentController</span>
+<span class="k">self</span><span class="o">.</span><span class="n">webView</span> <span class="o">=</span> <span class="kt">WKWebView</span><span class="p">(</span><span class="nv">frame</span><span class="p">:</span> <span class="k">self</span><span class="o">.</span><span class="n">view</span><span class="o">.</span><span class="n">bounds</span><span class="p">,</span>
+                         <span class="nv">configuration</span><span class="p">:</span> <span class="n">configuration</span><span class="p">)</span>
+</code></pre>
+  </div>
+</div></div>
+<p>When you create a <code>WKUser<wbr>Script</code> object,
+you provide JavaScript code to execute,
+specify whether it should be injected
+at the start or end of loading the document,
+and whether the behavior should be used for all frames or just the main frame.
+The user script is then added to a <code>WKUser<wbr>Content<wbr>Controller</code>,
+which is set on the <code>WKWeb<wbr>View<wbr>Configuration</code> object
+passed into the initializer for <code>WKWeb<wbr>View</code>.</p>
+<p>This example could easily be extended to perform more significant modifications,
+  such as <a href="https://github.com/panicsteve/cloud-to-butt" rel="noopener noreferrer">changing all occurrences of the phrase “the cloud” to “my butt”</a>.</p>
+<h3 id="message-handlers">Message Handlers</h3>
+<p>Communication from web to app has improved significantly as well,
+  with the introduction of message handlers.</p>
+<p>Like how <code>console.log</code> prints out information to the
+  <a href="https://developer.apple.com/safari/tools/" rel="noopener noreferrer">Safari Web Inspector</a>,
+  information from a web page can be passed back to the app by invoking:</p>
+<div class="highlight-group"><span class="language-toggle"><a data-lang="JavaScript" class="active">JavaScript</a></span><div class="language-javascript highlighter-rouge">
+  <div class="highlight">
+    <pre class="highlight"><code data-lang="JavaScript"><span class="nb">window</span><span class="p">.</span><span class="nx">webkit</span><span class="p">.</span><span class="nx">messageHandlers</span><span class="p">.</span><span class="o">&lt;</span><span class="err">#</span><span class="nx">name</span><span class="err">#</span><span class="o">&gt;</span><span class="p">.</span><span class="nx">postMessage</span><span class="p">()</span>
+</code></pre>
+  </div>
+</div></div>
+<blockquote>
+  <p>What’s really great about this API is that JavaScript objects are
+    <em>automatically serialized</em> into native Objective-C or Swift objects.</p>
+</blockquote>
+<p>The name of the handler is configured in <code>add(_:name)</code>,
+  which registers a handler conforming to the <code>WKScript<wbr>Message<wbr>Handler</code> protocol:</p>
+<div class="highlight-group"><span class="language-toggle"><a data-lang="Swift" class="active">Swift</a></span><div class="language-swift highlighter-rouge">
+  <div class="highlight">
+    <pre class="highlight"><code data-lang="Swift"><span class="kd">class</span> <span class="kt">NotificationScriptMessageHandler</span><span class="p">:</span> <span class="kt">NSObject</span><span class="p">,</span> <span class="kt">WKScriptMessageHandler</span> <span class="p">{</span>
+    <span class="kd">func</span> <span class="nf">userContentController</span><span class="p">(</span><span class="n">_</span> <span class="nv">userContentController</span><span class="p">:</span> <span class="kt">WKUserContentController</span><span class="p">,</span>
+                               <span class="n">didReceive</span> <span class="nv">message</span><span class="p">:</span> <span class="kt">WKScriptMessage</span><span class="p">)</span>
+    <span class="p">{</span>
+        <span class="nf">print</span><span class="p">(</span><span class="n">message</span><span class="o">.</span><span class="n">body</span><span class="p">)</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="k">let</span> <span class="nv">userContentController</span> <span class="o">=</span> <span class="kt">WKUserContentController</span><span class="p">()</span>
+<span class="k">let</span> <span class="nv">handler</span> <span class="o">=</span> <span class="kt">NotificationScriptMessageHandler</span><span class="p">()</span>
+<span class="n">userContentController</span><span class="o">.</span><span class="nf">add</span><span class="p">(</span><span class="n">handler</span><span class="p">,</span> <span class="nv">name</span><span class="p">:</span> <span class="s">"notification"</span><span class="p">)</span>
+</code></pre>
+  </div>
+</div></div>
+<p>Now, when a notification comes into the app
+  (such as to notify the creation of a new object on the page)
+  that information can be passed with:</p>
+<div class="highlight-group"><span class="language-toggle"><a data-lang="JavaScript" class="active">JavaScript</a></span><div class="language-javascript highlighter-rouge">
+  <div class="highlight">
+    <pre class="highlight"><code data-lang="JavaScript"><span class="nb">window</span><span class="p">.</span><span class="nx">webkit</span><span class="p">.</span><span class="nx">messageHandlers</span><span class="p">.</span><span class="nx">notification</span><span class="p">.</span><span class="nx">postMessage</span><span class="p">({</span> <span class="na">body</span><span class="p">:</span> <span class="s2">"..."</span> <span class="p">});</span>
+</code></pre>
+  </div>
+</div></div>
+<blockquote>
+  <p>Add User Scripts to create hooks for webpage events
+    that use Message Handlers to communicate status back to the app.</p>
+</blockquote>
+<p>The same approach can be used to scrape information
+  from the page for display
+  or analysis within the app.</p>
+<p>For example,
+  if you wanted to build a browser specifically for NSHipster.com,
+  it could have a button that listed related articles in a popover:</p>
+<div class="highlight-group"><span class="language-toggle"><a data-lang="JavaScript" class="active">JavaScript</a><a data-lang="Swift">Swift</a></span><div class="language-javascript highlighter-rouge">
+  <div class="highlight">
+    <pre class="highlight"><code data-lang="JavaScript"><span class="c1">// document.location.href == "https://nshipster.com/wkwebview"</span>
+<span class="kd">const</span> <span class="nx">showRelatedArticles</span> <span class="o">=</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="p">{</span>
+  <span class="kd">let</span> <span class="nx">related</span> <span class="o">=</span> <span class="p">[];</span>
+  <span class="kd">const</span> <span class="nx">elements</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">querySelectorAll</span><span class="p">(</span><span class="s2">"#related a"</span><span class="p">);</span>
+  <span class="k">for</span> <span class="p">(</span><span class="kd">const</span> <span class="nx">a</span> <span class="k">of</span> <span class="nx">elements</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">related</span><span class="p">.</span><span class="nx">push</span><span class="p">({</span> <span class="na">href</span><span class="p">:</span> <span class="nx">a</span><span class="p">.</span><span class="nx">href</span><span class="p">,</span> <span class="na">title</span><span class="p">:</span> <span class="nx">a</span><span class="p">.</span><span class="nx">title</span> <span class="p">});</span>
+  <span class="p">}</span>
+
+  <span class="nb">window</span><span class="p">.</span><span class="nx">webkit</span><span class="p">.</span><span class="nx">messageHandlers</span><span class="p">.</span><span class="nx">related</span><span class="p">.</span><span class="nx">postMessage</span><span class="p">({</span> <span class="na">articles</span><span class="p">:</span> <span class="nx">related</span> <span class="p">});</span>
+<span class="p">};</span>
+</code></pre>
+  </div>
+</div><div class="language-swift highlighter-rouge" style="display: none;">
+  <div class="highlight">
+    <pre class="highlight"><code data-lang="Swift"><span class="k">let</span> <span class="nv">js</span> <span class="o">=</span> <span class="s">"showRelatedArticles();"</span>
+<span class="k">self</span><span class="o">.</span><span class="n">webView</span><span class="p">?</span><span class="o">.</span><span class="nf">evaluateJavaScript</span><span class="p">(</span><span class="n">js</span><span class="p">)</span> <span class="p">{</span> <span class="p">(</span><span class="n">_</span><span class="p">,</span> <span class="n">error</span><span class="p">)</span> <span class="k">in</span>
+    <span class="nf">print</span><span class="p">(</span><span class="n">error</span><span class="p">)</span>
+<span class="p">}</span>
+
+<span class="c1">// Get results in a previously-registered message handler</span>
+</code></pre>
+  </div>
+</div></div>
+
+<h2 id="content-blocking-rules">Content Blocking Rules</h2>
+<p>Though depending on your use case,
+  you may be able to skip the hassle of round-trip communication with JavaScript.</p>
+<p>As of iOS 11 and macOS High Sierra,
+  you can specify declarative content blocking rules for a <code>WKWeb<wbr>View</code>,
+just like a
+<a href="https://developer.apple.com/library/archive/documentation/Extensions/Conceptual/ContentBlockingRules/CreatingRules/CreatingRules.html" rel="noopener noreferrer">Safari Content Blocker app extension</a>.</p>
+<p>For example,
+  if you wanted to <a href="https://makemediumreadable.com/" rel="noopener noreferrer">Make Medium Readable Again</a>
+  in your web view,
+  you could define the following rules in JSON:</p>
+<div class="highlight-group"><span class="language-toggle"><a data-lang="Swift" class="active">Swift</a></span><div class="language-swift highlighter-rouge">
+  <div class="highlight">
+    <pre class="highlight"><code data-lang="Swift"><span class="k">let</span> <span class="nv">json</span> <span class="o">=</span> <span class="s">"""
+[
+    {
+        "</span><span class="n">trigger</span><span class="s">": {
+            "</span><span class="k">if</span><span class="o">-</span><span class="n">domain</span><span class="s">": "</span><span class="o">*.</span><span class="n">medium</span><span class="o">.</span><span class="n">com</span><span class="s">"
+        },
+        "</span><span class="n">action</span><span class="s">": {
+            "</span><span class="n">type</span><span class="s">": "</span><span class="n">css</span><span class="o">-</span><span class="n">display</span><span class="o">-</span><span class="k">none</span><span class="s">",
+            "</span><span class="n">selector</span><span class="s">": "</span><span class="o">.</span><span class="n">overlay</span><span class="s">"
+        }
+    }
+]
+"""</span>
+</code></pre>
+  </div>
+</div></div>
+<p>Pass these rules to
+  <code>compile<wbr>Content<wbr>Rule<wbr>List(for<wbr>Identifier:encoded<wbr>Content<wbr>Rule<wbr>List:completion<wbr>Handler:)</code>
+and configure a web view with the resulting content rule list
+in the completion handler:</p>
+<div class="highlight-group"><span class="language-toggle"><a data-lang="Swift" class="active">Swift</a></span><div class="language-swift highlighter-rouge">
+  <div class="highlight">
+    <pre class="highlight"><code data-lang="Swift"><span class="kt">WKContentRuleListStore</span><span class="o">.</span><span class="nf">default</span><span class="p">()</span>
+    <span class="o">.</span><span class="nf">compileContentRuleList</span><span class="p">(</span><span class="nv">forIdentifier</span><span class="p">:</span> <span class="s">"ContentBlockingRules"</span><span class="p">,</span>
+                            <span class="nv">encodedContentRuleList</span><span class="p">:</span> <span class="n">json</span><span class="p">)</span>
+<span class="p">{</span> <span class="p">(</span><span class="n">contentRuleList</span><span class="p">,</span> <span class="n">error</span><span class="p">)</span> <span class="k">in</span>
+    <span class="k">guard</span> <span class="k">let</span> <span class="nv">contentRuleList</span> <span class="o">=</span> <span class="n">contentRuleList</span><span class="p">,</span>
+        <span class="n">error</span> <span class="o">==</span> <span class="kc">nil</span> <span class="k">else</span> <span class="p">{</span>
+        <span class="k">return</span>
+    <span class="p">}</span>
+
+    <span class="k">let</span> <span class="nv">configuration</span> <span class="o">=</span> <span class="kt">WKWebViewConfiguration</span><span class="p">()</span>
+    <span class="n">configuration</span><span class="o">.</span><span class="n">userContentController</span><span class="o">.</span><span class="nf">add</span><span class="p">(</span><span class="n">contentRuleList</span><span class="p">)</span>
+
+    <span class="k">self</span><span class="o">.</span><span class="n">webView</span> <span class="o">=</span> <span class="kt">WKWebView</span><span class="p">(</span><span class="nv">frame</span><span class="p">:</span> <span class="k">self</span><span class="o">.</span><span class="n">view</span><span class="o">.</span><span class="n">bounds</span><span class="p">,</span>
+                        <span class="nv">configuration</span><span class="p">:</span> <span class="n">configuration</span><span class="p">)</span>
+<span class="p">}</span>
+</code></pre>
+  </div>
+</div></div>
+<p>By declaring rules declaratively,
+  WebKit can compile these operations
+  into bytecode that can run much more efficiently
+  than if you injected JavaScript to do the same thing.</p>
+<p>In addition to hiding page elements,
+  you can use content blocking rules to
+  prevent page resources from loading (like images or scripts),
+  strip cookies from requests to the server,
+  and force a page to load securely over HTTPS.</p>
+<h2 id="snapshots">Snapshots</h2>
+<p>Starting in iOS 11 and macOS High Sierra,
+  the WebKit framework provides built-in APIs for taking screenshots of web pages.</p>
+<p>To take a picture of your web view’s visible viewport
+  after everything is finished loading,
+  implement the <code>web<wbr>View(_:did<wbr>Finish:)</code> delegate method
+to call the <code>take<wbr>Snapshot(with:completion<wbr>Handler:)</code> method like so:</p>
+<div class="highlight-group"><span class="language-toggle"><a data-lang="Swift" class="active">Swift</a></span><div class="language-swift highlighter-rouge">
+  <div class="highlight">
+    <pre class="highlight"><code data-lang="Swift"><span class="kd">func</span> <span class="nf">webView</span><span class="p">(</span><span class="n">_</span> <span class="nv">webView</span><span class="p">:</span> <span class="kt">WKWebView</span><span class="p">,</span>
+            <span class="n">didFinish</span> <span class="nv">navigation</span><span class="p">:</span> <span class="kt">WKNavigation</span><span class="o">!</span><span class="p">)</span>
+<span class="p">{</span>
+    <span class="k">var</span> <span class="nv">snapshotConfiguration</span> <span class="o">=</span> <span class="kt">WKSnapshotConfiguration</span><span class="p">()</span>
+    <span class="n">snapshotConfiguration</span><span class="o">.</span><span class="n">snapshotWidth</span> <span class="o">=</span> <span class="mi">1440</span>
+
+    <span class="n">webView</span><span class="o">.</span><span class="nf">takeSnapshot</span><span class="p">(</span><span class="nv">with</span><span class="p">:</span> <span class="n">snapshotConfiguration</span><span class="p">)</span> <span class="p">{</span> <span class="p">(</span><span class="n">image</span><span class="p">,</span> <span class="n">error</span><span class="p">)</span> <span class="k">in</span>
+        <span class="k">guard</span> <span class="k">let</span> <span class="nv">image</span> <span class="o">=</span> <span class="n">image</span><span class="p">,</span>
+            <span class="n">error</span> <span class="o">==</span> <span class="kc">nil</span> <span class="k">else</span> <span class="p">{</span>
+            <span class="k">return</span>
+        <span class="p">}</span>
+
+        <span class="c1">// ...</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre>
+  </div>
+</div></div>
+<p>Previously,
+  taking screenshots of a web page meant
+  messing around with view layers and graphics contexts.
+  So a clean, single method option is a welcome addition to the API.</p>
+<hr>
+<p><code>WKWeb<wbr>View</code> truly makes the web feel like a first-class citizen.
+Even if you consider yourself native purist,
+you may be surprised at the power and flexibility afforded by WebKit.</p>
+<p>In fact, many of the apps you use every day rely on WebKit
+  to render especially tricky content.
+  The fact that you probably haven’t noticed should be an indicator
+  that web views are consistent with app development best practices.</p>
+</div>
+<footer role="complementary">
+  <section id="revisions">
+    <small>NSMutableHipster</small>
+    <p>
+      Questions? Corrections? <a href="https://github.com/NSHipster/articles/issues">Issues</a> and <a href="https://github.com/NSHipster/articles/blob/master/2014-08-24-wkwebview.md">pull requests</a> are always welcome — NSHipster is made better by readers like you.
+    </p>
+    <p>
+      <em>This article uses Swift version 4.2 and was last reviewed on July 25, 2018.</em>
+      Find status information for all articles on the <a href="https://nshipster.com/status/">status page</a>.
+    </p>
+    <dl>
+      <dt>August 24<sup>th</sup>, 2014</dt>
+      <dd>
+        <p>First Publication</p>
+      </dd>
+      <dt>July 25<sup>th</sup>, 2018</dt>
+      <dd>
+        <p>Updated for iOS 12 and macOS Mojave</p>
+      </dd>
+    </dl>
+  </section>
+  <section id="attribution">
+    <div class="contributor" itemprop="author" itemscope="" itemtype="https://schema.org/Person">
+      <small>Written by</small>
+      <img class="avatar" alt="Mattt" itemprop="image" src="./WKWebView - NSHipster_files/mattt-93904827ef54896bb67f3a0d4abf548b9ecc93a51536bbc3326f24630512727d.jpg" draggable="false">
+      <div class="details">
+        <span itemprop="name"><a href="https://nshipster.com/authors/mattt/">Mattt</a></span>
+        <p><a href="https://github.com/mattt" rel="noopener noreferrer">Mattt</a> (<a href="https://twitter.com/mattt" rel="noopener noreferrer">@mattt</a>)
+          is a writer and developer in Portland, Oregon.
+          He is the founder of NSHipster and <a href="https://flight.school/" rel="noopener noreferrer">Flight School</a>,
+          and the creator of several open source libraries,
+          including <a href="https://github.com/afnetworking/afnetworking" rel="noopener noreferrer">AFNetworking</a>
+          and <a href="https://github.com/alamofire/alamofire" rel="noopener noreferrer">Alamofire</a>.</p>
+        <a href="https://plus.google.com/106751358503565042647?rel=author" rel="author"></a>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div id="continue">
+      <small>Next Article</small>
+      <article>
+        <h1 class="title">
+          <a rel="next" href="https://nshipster.com/swift-default-protocol-implementations/" title="Swift Default Protocol Implementations">Swift Default Protocol Implementations</a>
+        </h1>
+        <p>Protocols are the foundation of generics in Swift, but suffer from the lack of a built-in way to provide default implementations for methods. However, there is an interesting workaround in Swift that you probably haven’t noticed.</p>
+      </article>
+    </div>
+  </section>
+</footer>
+</article>
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "item": {
+          "@id": "https://nshipster.com",
+          "name": "Articles"
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "item": {
+          "@id": "https://nshipster.com/wkwebview/",
+          "name": "WKWebView"
+        }
+      }
+    ]
+  }
+</script>
+</main>
+<footer role="contentinfo">
+  <section class="credits colophon">
+    <p>
+      Questions? Corrections? <a href="https://twitter.com/NSHipster">@NSHipster</a> or <a href="https://github.com/NSHipster/articles">on GitHub</a>.
+    </p>
+    <p>
+      <i aria-hidden="true" class="icon-cc" title="Creative Commons"></i>
+      <i aria-hidden="true" class="icon-by" title="Attribution"></i>
+      <i aria-hidden="true" class="icon-nc" title="Non-Commercial"></i>
+      NSHipster.com is released under a <a href="https://creativecommons.org/licenses/by-nc/4.0/" rel="license">Creative Commons BY-NC License</a>.
+    </p>
+    <p>
+      NSHipster is also available in
+      <a href="https://nshipster.cn/" hreflang="zh-Hans">Chinese (Simplified)</a>,
+      <a href="https://nshipster.co.kr/" hreflang="ko">Korean</a>, and
+      <a href="https://nshipster.es/" hreflang="es">Spanish</a>
+      .
+    </p>
+    <a href="https://plus.google.com/105091289906267717942" rel="publisher" hidden="" aria-hidden="true"></a>
+  </section>
+</footer>
+</div>
+<script async="async" integrity="sha256-3G93F7vc2QS7B9xqQV9MoM082CtcumaOz4+xKJSjy8E=" crossorigin="anonymous" src="./WKWebView - NSHipster_files/application-dc6f7717bbdcd904bb07dc6a415f4ca0cd3cd82b5cba668ecf8fb12894a3cbc1.js" type="text/javascript"></script>
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "NSHipster",
+    "legalName": "NSHipster, LLC",
+    "url": "https://nshipster.com",
+    "logo": "https://nshipster.com/logo.png",
+    "foundingDate": "2012",
+    "founders": [{
+      "@type": "Person",
+      "name": "Mattt"
+    }],
+    "sameAs": [
+      "https://twitter.com/nshipster",
+      "https://github.com/nshipster",
+      "https://plus.google.com/+NSHipster",
+      "https://www.facebook.com/NSHipster"
+    ]
+  }
+</script>
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "url": "https://nshipster.com",
+    "name": "NSHipster",
+    "author": {
+      "@type": "Person",
+      "name": "Mattt"
+    },
+    "description": "NSHipster is a journal of the overlooked bits in Objective-C, Swift, and Cocoa. Updated weekly.",
+    "publisher": "Read Evaluate Press, LLC"
+  }
+</script>
+<script type="application/jamalytics+json">
+{
+    "endpoint": "https://analytics.nshipster.com/",
+    "property": 3
+}
+</script>
+<script async="" defer="" src="./WKWebView - NSHipster_files/tracker.js"></script>
+</body></html>
