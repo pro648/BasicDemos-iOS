@@ -1,0 +1,7 @@
+
+#set("content") {
+  <h1>Here's some motivation:</h1>
+  <h2>#(motivationalLottery.motivation)</h2>
+}
+
+#embed("base")

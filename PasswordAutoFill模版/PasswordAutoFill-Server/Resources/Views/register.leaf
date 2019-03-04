@@ -1,0 +1,34 @@
+#set("content") {
+  <h1>#(title)</h1>
+
+  #if(message) {
+    <div class="alert alert-danger" role="alert">
+      Please fix the following errors:<br />
+      #(message)
+    </div>
+  }
+
+  <form method="post">
+    <div class="form-group">
+      <label for="username">Username</label>
+      <input type="email" autocomplete="username" name="username" class="form-control"
+       id="username"/>
+    </div>
+
+    <div class="form-group">
+      <label for="password">Password</label>
+<input type="password" autocomplete="new-password" name="password" class="form-control" id="password" minlength="10" passwordrules="required:upper; required:lower; required:digit; max-consecutive:2"/>
+    </div>
+
+    <div class="form-group">
+      <label for="confirmPassword">Confirm Password</label>
+      <input type="password" autocomplete="new-password" name="confirmPassword" class="form-control" id="confirmPassword"/>
+    </div>
+
+    <button type="submit" class="btn btn-primary">
+      Register
+    </button>
+  </form>
+}
+
+#embed("base")

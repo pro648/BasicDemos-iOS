@@ -1,0 +1,31 @@
+#set("content") {
+  <h1>#(title)</h1>
+
+  #if(loginError) {
+    <div class="alert alert-danger" role="alert">
+      User authentication error. Either your username or password was invalid.
+    </div>
+  }
+
+  #if(message) {
+    <div class="alert alert-danger" role="alert">
+      #(message)
+    </div>
+  }
+  
+  <form method="post">
+    <div class="form-group">
+      <label for="username">Username</label>
+      <input type="email" autocomplete="username" name="username" class="form-control" id="username"/>
+    </div>
+    
+    <div class="form-group">
+      <label for="password">Password</label>
+      <input type="password" autocomplete="current-password" name="password" class="form-control" id="password"/>
+    </div>
+    
+    <button type="submit" class="btn btn-primary">Log In</button>
+  </form>
+}
+
+#embed("base")
