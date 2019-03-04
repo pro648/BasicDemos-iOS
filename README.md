@@ -21,6 +21,8 @@ iOS学习进程中的demo汇总
 | KeyedArchiver             | [数据存储之归档解档 NSKeyedArchiver NSKeyedUnarchiver](https://github.com/pro648/tips/wiki/%E6%95%B0%E6%8D%AE%E5%AD%98%E5%82%A8%E4%B9%8B%E5%BD%92%E6%A1%A3%E8%A7%A3%E6%A1%A3-NSKeyedArchiver-NSKeyedUnarchiver) |
 | NSURLSession1             | [NSURLSession的使用](https://github.com/pro648/tips/wiki/NSURLSession%E7%9A%84%E4%BD%BF%E7%94%A8%EF%BC%88%E4%B8%80%EF%BC%89) |
 | PageViewController | [UIPageViewController的使用](https://github.com/pro648/tips/wiki/UIPageViewController%E7%9A%84%E4%BD%BF%E7%94%A8) |
+|PasswordAutoFill	|	[Password AutoFill 的使用](https://github.com/pro648/tips/wiki/assword%20AutoFill%20%E7%9A%84%E4%BD%BF%E7%94%A8)	|
+|PasswordAutoFill模版	|[Password AutoFill 的使用](https://github.com/pro648/tips/wiki/assword%20AutoFill%20%E7%9A%84%E4%BD%BF%E7%94%A8)文章模版	|
 | Persistence               | [使用偏好设置、属性列表、归档解档保存数据、恢复数据](https://github.com/pro648/tips/wiki/使用偏好设置、属性列表、归档解档保存数据、恢复数据) |
 | PropertyAnimator          | [UIViewPropertyAnimator的使用](https://github.com/pro648/tips/wiki/UIViewPropertyAnimator%E7%9A%84%E4%BD%BF%E7%94%A8) |
 | RefreshControl            | [在UIScrollView、UICollectionView和UITableView中添加UIRefreshControl实现下拉刷新](https://github.com/pro648/tips/wiki/%E5%9C%A8UIScrollView%E3%80%81UICollectionView%E5%92%8CUITableView%E4%B8%AD%E6%B7%BB%E5%8A%A0UIRefreshControl%E5%AE%9E%E7%8E%B0%E4%B8%8B%E6%8B%89%E5%88%B7%E6%96%B0) |
