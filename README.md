@@ -30,6 +30,7 @@ iOS学习进程中的demo汇总
 | RegularExpression模板       | [正则表达式NSRegularExpression](https://github.com/pro648/tips/wiki/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8FNSRegularExpression)文章模板 |
 | ScrollView                | [UIScrollView的用法](https://github.com/pro648/tips/wiki/UIScrollView%E7%9A%84%E7%94%A8%E6%B3%95) |
 | StackView                 | [Auto Layout中Stack View的使用](https://github.com/pro648/tips/wiki/Auto-Layout%E4%B8%ADStack-View%E7%9A%84%E4%BD%BF%E7%94%A8) |
+| StrategyPattern	|	[策略模式 Strategy Pattern](https://github.com/pro648/tips/wiki/%E7%AD%96%E7%95%A5%E6%A8%A1%E5%BC%8F-Design-Pattern)	|
 | UIKitDynamics             | [一篇文章学会使用UIKit Dynamics](https://github.com/pro648/tips/wiki/%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0%E5%AD%A6%E4%BC%9A%E4%BD%BF%E7%94%A8UIKit%20Dynamics) |
 | UserNotifications			| [UserNotifications框架详解](https://github.com/pro648/tips/wiki/UserNotifications%E6%A1%86%E6%9E%B6%E8%AF%A6%E8%A7%A3)|
 |WebKit的使用|[WebKit的使用](https://github.com/pro648/tips/wiki/WebKit的使用)|
