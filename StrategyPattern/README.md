@@ -11,7 +11,7 @@
 
 详细介绍查看下面文章：
 
-<https://github.com/pro648/tips/wiki/策略模式-Design-Pattern>
+<https://github.com/pro648/tips/wiki/策略模式-Strategy-Pattern>
 
 ##### Requirements
 
