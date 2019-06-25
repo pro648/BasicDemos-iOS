@@ -19,6 +19,7 @@ iOS学习进程中的demo汇总
 | GestureRecognizer         | [手势控制：点击、滑动、平移、捏合、旋转、长按、轻扫](https://github.com/pro648/tips/wiki/%E6%89%8B%E5%8A%BF%E6%8E%A7%E5%88%B6%EF%BC%9A%E7%82%B9%E5%87%BB%E3%80%81%E6%BB%91%E5%8A%A8%E3%80%81%E5%B9%B3%E7%A7%BB%E3%80%81%E6%8D%8F%E5%90%88%E3%80%81%E6%97%8B%E8%BD%AC%E3%80%81%E9%95%BF%E6%8C%89%E3%80%81%E8%BD%BB%E6%89%AB) |
 | KVC&KVODemo               | [KVC和KVO学习笔记](https://github.com/pro648/tips/wiki/KVC%E5%92%8CKVO%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0) |
 | KeyedArchiver             | [数据存储之归档解档 NSKeyedArchiver NSKeyedUnarchiver](https://github.com/pro648/tips/wiki/%E6%95%B0%E6%8D%AE%E5%AD%98%E5%82%A8%E4%B9%8B%E5%BD%92%E6%A1%A3%E8%A7%A3%E6%A1%A3-NSKeyedArchiver-NSKeyedUnarchiver) |
+| MementoPattern	| [备忘录模式 Memento Pattern](https://github.com/pro648/tips/wiki/%E5%A4%87%E5%BF%98%E5%BD%95%E6%A8%A1%E5%BC%8F-Memento-Pattern)	|
 | NSURLSession1             | [NSURLSession的使用](https://github.com/pro648/tips/wiki/NSURLSession%E7%9A%84%E4%BD%BF%E7%94%A8%EF%BC%88%E4%B8%80%EF%BC%89) |
 | PageViewController | [UIPageViewController的使用](https://github.com/pro648/tips/wiki/UIPageViewController%E7%9A%84%E4%BD%BF%E7%94%A8) |
 |PasswordAutoFill	|	[Password AutoFill 的使用](https://github.com/pro648/tips/wiki/Password%20AutoFill%20%E7%9A%84%E4%BD%BF%E7%94%A8)	|
