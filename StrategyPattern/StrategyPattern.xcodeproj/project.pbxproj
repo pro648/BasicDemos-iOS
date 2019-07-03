@@ -11,6 +11,7 @@
 		0D399AFC2298294C001D9B9B /* NormalPriceStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D399AFB2298294C001D9B9B /* NormalPriceStrategy.swift */; };
 		0D399B00229829A7001D9B9B /* FreeShippingStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D399AFF229829A7001D9B9B /* FreeShippingStrategy.swift */; };
 		0D399B02229829F4001D9B9B /* DiscountStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D399B01229829F4001D9B9B /* DiscountStrategy.swift */; };
+		0D44E33D22CCE8CA00B34782 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 0D44E33C22CCE8CA00B34782 /* README.md */; };
 		0D4F951F229EA65600FE5F8C /* ShoppingCartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D4F951E229EA65600FE5F8C /* ShoppingCartViewController.swift */; };
 		0D4F9521229EB4FB00FE5F8C /* TotalPriceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D4F9520229EB4FB00FE5F8C /* TotalPriceViewController.swift */; };
 		0D6D86512296D6A00069A9D3 /* MealTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D6D86502296D6A00069A9D3 /* MealTableViewCell.swift */; };
@@ -27,6 +28,7 @@
 		0D399AFB2298294C001D9B9B /* NormalPriceStrategy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NormalPriceStrategy.swift; sourceTree = "<group>"; };
 		0D399AFF229829A7001D9B9B /* FreeShippingStrategy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FreeShippingStrategy.swift; sourceTree = "<group>"; };
 		0D399B01229829F4001D9B9B /* DiscountStrategy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscountStrategy.swift; sourceTree = "<group>"; };
+		0D44E33C22CCE8CA00B34782 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		0D4F951E229EA65600FE5F8C /* ShoppingCartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingCartViewController.swift; sourceTree = "<group>"; };
 		0D4F9520229EB4FB00FE5F8C /* TotalPriceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TotalPriceViewController.swift; sourceTree = "<group>"; };
 		0D6D86502296D6A00069A9D3 /* MealTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealTableViewCell.swift; sourceTree = "<group>"; };
@@ -110,6 +112,7 @@
 		0DAF46A922957822002462B2 = {
 			isa = PBXGroup;
 			children = (
+				0D44E33C22CCE8CA00B34782 /* README.md */,
 				0DAF46B422957822002462B2 /* StrategyPattern */,
 				0DAF46B322957822002462B2 /* Products */,
 			);
@@ -196,6 +199,7 @@
 			files = (
 				0DAF46C022957824002462B2 /* LaunchScreen.storyboard in Resources */,
 				0DAF46BD22957824002462B2 /* Assets.xcassets in Resources */,
+				0D44E33D22CCE8CA00B34782 /* README.md in Resources */,
 				0DAF46BB22957822002462B2 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
