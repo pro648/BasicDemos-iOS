@@ -1,0 +1,9 @@
+platform :ios, '11.0'
+
+target 'MVVMPattern' do
+  use_frameworks!
+  pod 'YelpAPI', '3.0.0'
+
+  # Pods for MVVMPattern
+
+end

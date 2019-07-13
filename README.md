@@ -21,7 +21,9 @@ iOS学习进程中的demo汇总
 | KVC&KVODemo               | [KVC和KVO学习笔记](https://github.com/pro648/tips/wiki/KVC%E5%92%8CKVO%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0) |
 | KeyedArchiver             | [数据存储之归档解档 NSKeyedArchiver NSKeyedUnarchiver](https://github.com/pro648/tips/wiki/%E6%95%B0%E6%8D%AE%E5%AD%98%E5%82%A8%E4%B9%8B%E5%BD%92%E6%A1%A3%E8%A7%A3%E6%A1%A3-NSKeyedArchiver-NSKeyedUnarchiver) |
 | MementoPattern	| [备忘录模式 Memento Pattern](https://github.com/pro648/tips/wiki/%E5%A4%87%E5%BF%98%E5%BD%95%E6%A8%A1%E5%BC%8F-Memento-Pattern)|
-| Model-View-ModelView | [MVVM设计模式](https://github.com/pro648/tips/wiki/MVVM%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F) |
+| Model-View-ModelView | [MVVM设计模式](https://github.com/pro648/tips/wiki/MVVM%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F)playground |
+| MVVMPattern | [MVVM设计模式](https://github.com/pro648/tips/wiki/MVVM%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F) |
+| MVVMPattern模式 | [MVVM设计模式](https://github.com/pro648/tips/wiki/MVVM%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F)文章模版 |
 | NSURLSession1             | [NSURLSession的使用](https://github.com/pro648/tips/wiki/NSURLSession%E7%9A%84%E4%BD%BF%E7%94%A8%EF%BC%88%E4%B8%80%EF%BC%89) |
 | PageViewController | [UIPageViewController的使用](https://github.com/pro648/tips/wiki/UIPageViewController%E7%9A%84%E4%BD%BF%E7%94%A8) |
 |PasswordAutoFill	|	[Password AutoFill 的使用](https://github.com/pro648/tips/wiki/Password%20AutoFill%20%E7%9A%84%E4%BD%BF%E7%94%A8)	|

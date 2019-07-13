@@ -1,0 +1,16 @@
+PODS:
+  - YelpAPI (3.0.0)
+
+DEPENDENCIES:
+  - YelpAPI (= 3.0.0)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - YelpAPI
+
+SPEC CHECKSUMS:
+  YelpAPI: 9ae0ee45b998d306c1aff9b2d966dc23121f191e
+
+PODFILE CHECKSUM: 96825758e8eba8648040a81bb75b1747e962270c
+
+COCOAPODS: 1.5.3
