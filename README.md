@@ -7,6 +7,7 @@ iOS学习进程中的demo汇总
 | Demo名称                    | 主要内容                                     |
 | ------------------------- | ---------------------------------------- |
 |	AbstractFactory	|	[工厂模式 Factory Pattern](https://github.com/pro648/tips/wiki/%E5%B7%A5%E5%8E%82%E6%A8%A1%E5%BC%8F-Factory-Pattern)	|
+|	AdapterPattern	|	[适配器模式 Adapter Pattern](https://github.com/pro648/tips/wiki/%E9%80%82%E9%85%8D%E5%99%A8%E6%A8%A1%E5%BC%8F-Adapter-Pattern)	|
 | AlertController           | [UIAlertController的使用方法](https://github.com/pro648/tips/wiki/UIAlertController%E7%9A%84%E4%BD%BF%E7%94%A8) |
 | AutoLayout                | [Auto Layout的使用](https://github.com/pro648/tips/wiki/Auto-Layout%E7%9A%84%E4%BD%BF%E7%94%A8) |
 | Block                     | [Block的用法](https://github.com/pro648/tips/wiki/Block%E7%9A%84%E7%94%A8%E6%B3%95) |
