@@ -33,6 +33,7 @@ iOS学习进程中的demo汇总
 |PasswordAutoFill模版	|[Password AutoFill 的使用](https://github.com/pro648/tips/wiki/Password%20AutoFill%20%E7%9A%84%E4%BD%BF%E7%94%A8)文章模版	|
 | Persistence               | [使用偏好设置、属性列表、归档解档保存数据、恢复数据](https://github.com/pro648/tips/wiki/使用偏好设置、属性列表、归档解档保存数据、恢复数据) |
 | PropertyAnimator          | [UIViewPropertyAnimator的使用](https://github.com/pro648/tips/wiki/UIViewPropertyAnimator%E7%9A%84%E4%BD%BF%E7%94%A8) |
+| PrototypePattern | [原型模式 Prototype Pattern](https://github.com/pro648/tips/wiki/%E5%8E%9F%E5%9E%8B%E6%A8%A1%E5%BC%8F-Prototype-Pattern)	|
 | RefreshControl            | [在UIScrollView、UICollectionView和UITableView中添加UIRefreshControl实现下拉刷新](https://github.com/pro648/tips/wiki/%E5%9C%A8UIScrollView%E3%80%81UICollectionView%E5%92%8CUITableView%E4%B8%AD%E6%B7%BB%E5%8A%A0UIRefreshControl%E5%AE%9E%E7%8E%B0%E4%B8%8B%E6%8B%89%E5%88%B7%E6%96%B0) |
 | RegularExpression         | [正则表达式NSRegularExpression](https://github.com/pro648/tips/wiki/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8FNSRegularExpression) |
 | RegularExpression模板       | [正则表达式NSRegularExpression](https://github.com/pro648/tips/wiki/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8FNSRegularExpression)文章模板 |
