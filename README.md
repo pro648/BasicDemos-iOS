@@ -41,6 +41,7 @@ iOS学习进程中的demo汇总
 |	RunTime	|	[Runtime从入门到进阶一](https://github.com/pro648/tips/wiki/Runtime%E4%BB%8E%E5%85%A5%E9%97%A8%E5%88%B0%E8%BF%9B%E9%98%B6%E4%B8%80)	|
 | ScrollView                | [UIScrollView的用法](https://github.com/pro648/tips/wiki/UIScrollView%E7%9A%84%E7%94%A8%E6%B3%95) |
 | SimpleFactory | [工厂模式 Factory Pattern](https://github.com/pro648/tips/wiki/%E5%B7%A5%E5%8E%82%E6%A8%A1%E5%BC%8F-Factory-Pattern)	|
+|	SQLite	|	[SQLite的使用三](https://github.com/pro648/tips/wiki/SQLite%E7%9A%84%E4%BD%BF%E7%94%A8%E4%B8%89)	|
 | StackView                 | [Auto Layout中Stack View的使用](https://github.com/pro648/tips/wiki/Auto-Layout%E4%B8%ADStack-View%E7%9A%84%E4%BD%BF%E7%94%A8) |
 | StrategyPattern	|	[策略模式 Strategy Pattern](https://github.com/pro648/tips/wiki/%E7%AD%96%E7%95%A5%E6%A8%A1%E5%BC%8F-Design-Pattern)	|
 |	Timer	|	[Timer的使用](https://github.com/pro648/tips/wiki/Timer%E7%9A%84%E4%BD%BF%E7%94%A8)		|
