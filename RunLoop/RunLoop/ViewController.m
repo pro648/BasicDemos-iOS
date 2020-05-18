@@ -87,6 +87,8 @@ void observerRunLoopActivities(CFRunLoopObserverRef observer, CFRunLoopActivity 
      */
     
 //    [self addTimer];
+    
+//    [self testAfterDelay];
 }
 
 - (void)addTimer {
@@ -115,6 +117,28 @@ void observerRunLoopActivities(CFRunLoopObserverRef observer, CFRunLoopActivity 
 
 void myCFTimerCallback() {
     NSLog(@"timer 添加到了 CFRunLoopTimerRef");
+}
+
+// MARK: AfterDelay
+
+- (void)testAfterDelay {
+    dispatch_queue_t queue = dispatch_get_global_queue(QOS_CLASS_UTILITY, 0);
+    
+    dispatch_async(queue, ^{
+        // 1. 相等于 objcMsgSend(self, @selector(test))，即[self test]，直接调用，可以输出 test 内容。
+//        [self performSelector:@selector(test)];
+        
+        // 2. 相当于在当前线程添加计时器，由于全局队列线程默认没有 runloop，计时器不会被触发，不会输出 test 内容。
+        [self performSelector:@selector(test) withObject:NULL afterDelay:1.0];
+        
+        // 3. 添加以下代码后，2的test会被调用。
+        [[NSRunLoop currentRunLoop] addPort:[[NSPort alloc] init] forMode:NSDefaultRunLoopMode];
+        [[NSRunLoop currentRunLoop] runMode:NSDefaultRunLoopMode beforeDate:[NSDate distantFuture]];
+    });
+}
+
+- (void)test {
+    NSLog(@"%i %s", __LINE__, __PRETTY_FUNCTION__);
 }
 
 @end
