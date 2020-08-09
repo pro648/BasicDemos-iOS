@@ -13,6 +13,7 @@ iOS学习进程中的demo汇总
 | Block                     | [Block的用法](https://github.com/pro648/tips/wiki/Block%E7%9A%84%E7%94%A8%E6%B3%95) |
 | BuilderPattern	| [生成器模式 Builder Pattern](https://github.com/pro648/tips/wiki/生成器模式-Builder-Pattern)	|
 | CollectionView            | [UICollectionView及其新功能drag and drop](https://github.com/pro648/tips/wiki/UICollectionView及其新功能drag-and-drop) |
+|	CoreAnimation	|	[CoreAnimation基本介绍](https://github.com/pro648/tips/blob/master/sources/CoreAnimation%E5%9F%BA%E6%9C%AC%E4%BB%8B%E7%BB%8D.md)	|
 | Delegation&Notification   | [委托、通知传值的用法与区别](https://github.com/pro648/tips/wiki/%E5%A7%94%E6%89%98%E3%80%81%E9%80%9A%E7%9F%A5%E4%BC%A0%E5%80%BC%E7%9A%84%E7%94%A8%E6%B3%95%E4%B8%8E%E5%8C%BA%E5%88%AB) |
 | Delegation&Notification模板 | [委托、通知传值的用法与区别](https://github.com/pro648/tips/wiki/%E5%A7%94%E6%89%98%E3%80%81%E9%80%9A%E7%9F%A5%E4%BC%A0%E5%80%BC%E7%9A%84%E7%94%A8%E6%B3%95%E4%B8%8E%E5%8C%BA%E5%88%AB)博文模板 |
 |DisplayViewController|[View Controller 转场](https://github.com/pro648/tips/wiki/View%20Controller%20%E8%BD%AC%E5%9C%BA)|
