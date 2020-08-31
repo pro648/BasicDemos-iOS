@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+  <dict>
+    <key>image</key>
+    <string>epic_dog</string>
+    <key>name</key>
+    <string>Wrigley</string>
+    <key>description</key>
+    <string>Battle tested. You can rely on him.</string>
+  </dict>
+  <dict>
+    <key>image</key>
+    <string>sad_dog</string>
+    <key>name</key>
+    <string>Rufus</string>
+    <key>description</key>
+    <string>You will never deny his treats.</string>
+  </dict>
+  <dict>
+    <key>image</key>
+    <string>back_cat</string>
+    <key>name</key>
+    <string>Wiggles</string>
+    <key>description</key>
+    <string>She will turn her back on you, when you least expect it.</string>
+  </dict>
+  <dict>
+    <key>image</key>
+    <string>sleepy_cat</string>
+    <key>name</key>
+    <string>Rumble</string>
+    <key>description</key>
+    <string>Always down for naps.</string>
+  </dict>
+  <dict>
+    <key>image</key>
+    <string>boring_fish</string>
+    <key>name</key>
+    <string>Bongo</string>
+    <key>description</key>
+    <string>Not very likely to spice up your life.</string>
+  </dict>
+</array>
+</plist>
