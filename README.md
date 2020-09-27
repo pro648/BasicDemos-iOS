@@ -39,6 +39,7 @@ iOS学习进程中的demo汇总
 | RefreshControl            | [在UIScrollView、UICollectionView和UITableView中添加UIRefreshControl实现下拉刷新](https://github.com/pro648/tips/wiki/%E5%9C%A8UIScrollView%E3%80%81UICollectionView%E5%92%8CUITableView%E4%B8%AD%E6%B7%BB%E5%8A%A0UIRefreshControl%E5%AE%9E%E7%8E%B0%E4%B8%8B%E6%8B%89%E5%88%B7%E6%96%B0) |
 | RegularExpression         | [正则表达式NSRegularExpression](https://github.com/pro648/tips/wiki/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8FNSRegularExpression) |
 | RegularExpression模板       | [正则表达式NSRegularExpression](https://github.com/pro648/tips/wiki/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8FNSRegularExpression)文章模板 |
+|	ResponderChain	|	[事件传递和响应链（Responder Chain）](https://github.com/pro648/tips/blob/master/sources/%E4%BA%8B%E4%BB%B6%E4%BC%A0%E9%80%92%E5%92%8C%E5%93%8D%E5%BA%94%E9%93%BE%EF%BC%88Responder%20Chain%EF%BC%89.md)	|
 |	RunLoop	|	[RunLoop从入门到进阶](https://github.com/pro648/tips/wiki/RunLoop%E4%BB%8E%E5%85%A5%E9%97%A8%E5%88%B0%E8%BF%9B%E9%98%B6)	|
 |	RunTime	|	[Runtime从入门到进阶一](https://github.com/pro648/tips/wiki/Runtime%E4%BB%8E%E5%85%A5%E9%97%A8%E5%88%B0%E8%BF%9B%E9%98%B6%E4%B8%80)	|
 | ScrollView                | [UIScrollView的用法](https://github.com/pro648/tips/wiki/UIScrollView%E7%9A%84%E7%94%A8%E6%B3%95) |
