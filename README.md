@@ -24,6 +24,7 @@ iOS学习进程中的demo汇总
 | IteratorPattern	| [迭代器模式 Iterator Pattern](https://github.com/pro648/tips/wiki/%E8%BF%AD%E4%BB%A3%E5%99%A8%E6%A8%A1%E5%BC%8F-Iterator-Pattern)	|
 | KVC&KVODemo               | [KVC和KVO学习笔记](https://github.com/pro648/tips/wiki/KVC%E5%92%8CKVO%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0) |
 | KeyedArchiver             | [数据存储之归档解档 NSKeyedArchiver NSKeyedUnarchiver](https://github.com/pro648/tips/wiki/%E6%95%B0%E6%8D%AE%E5%AD%98%E5%82%A8%E4%B9%8B%E5%BD%92%E6%A1%A3%E8%A7%A3%E6%A1%A3-NSKeyedArchiver-NSKeyedUnarchiver) |
+| LinkedList	| [链表 LinkedList](https://github.com/pro648/tips/blob/master/sources/%E9%93%BE%E8%A1%A8%20LinkedList.md)	|
 | MementoPattern	| [备忘录模式 Memento Pattern](https://github.com/pro648/tips/wiki/%E5%A4%87%E5%BF%98%E5%BD%95%E6%A8%A1%E5%BC%8F-Memento-Pattern)|
 | Model-View-ModelView | [MVVM设计模式](https://github.com/pro648/tips/wiki/MVVM%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F)playground |
 | MVVMPattern | [MVVM设计模式](https://github.com/pro648/tips/wiki/MVVM%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F) |
