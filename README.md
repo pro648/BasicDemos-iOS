@@ -37,6 +37,7 @@ iOS学习进程中的demo汇总
 | Persistence               | [使用偏好设置、属性列表、归档解档保存数据、恢复数据](https://github.com/pro648/tips/wiki/使用偏好设置、属性列表、归档解档保存数据、恢复数据) |
 | PropertyAnimator          | [UIViewPropertyAnimator的使用](https://github.com/pro648/tips/wiki/UIViewPropertyAnimator%E7%9A%84%E4%BD%BF%E7%94%A8) |
 | PrototypePattern | [原型模式 Prototype Pattern](https://github.com/pro648/tips/wiki/%E5%8E%9F%E5%9E%8B%E6%A8%A1%E5%BC%8F-Prototype-Pattern)	|
+| Queue | [队列的四种实现方式：数组、双向链表、环形缓冲区、栈](https://github.com/pro648/tips/blob/master/sources/%E9%98%9F%E5%88%97%E7%9A%84%E5%9B%9B%E7%A7%8D%E5%AE%9E%E7%8E%B0%E6%96%B9%E5%BC%8F%EF%BC%9A%E6%95%B0%E7%BB%84%E3%80%81%E5%8F%8C%E5%90%91%E9%93%BE%E8%A1%A8%E3%80%81%E7%8E%AF%E5%BD%A2%E7%BC%93%E5%86%B2%E5%8C%BA%E3%80%81%E6%A0%88.md)	|
 | RefreshControl            | [在UIScrollView、UICollectionView和UITableView中添加UIRefreshControl实现下拉刷新](https://github.com/pro648/tips/wiki/%E5%9C%A8UIScrollView%E3%80%81UICollectionView%E5%92%8CUITableView%E4%B8%AD%E6%B7%BB%E5%8A%A0UIRefreshControl%E5%AE%9E%E7%8E%B0%E4%B8%8B%E6%8B%89%E5%88%B7%E6%96%B0) |
 | RegularExpression         | [正则表达式NSRegularExpression](https://github.com/pro648/tips/wiki/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8FNSRegularExpression) |
 | RegularExpression模板       | [正则表达式NSRegularExpression](https://github.com/pro648/tips/wiki/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8FNSRegularExpression)文章模板 |
