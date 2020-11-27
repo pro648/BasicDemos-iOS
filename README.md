@@ -58,6 +58,7 @@ iOS学习进程中的demo汇总
 | UIKitDynamics             | [一篇文章学会使用UIKit Dynamics](https://github.com/pro648/tips/wiki/%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0%E5%AD%A6%E4%BC%9A%E4%BD%BF%E7%94%A8UIKit%20Dynamics) |
 |	URLSession	|	[URLSession详解](https://github.com/pro648/tips/wiki/URLSession%E8%AF%A6%E8%A7%A3)	|
 | UserNotifications			| [UserNotifications框架详解](https://github.com/pro648/tips/wiki/UserNotifications%E6%A1%86%E6%9E%B6%E8%AF%A6%E8%A7%A3)|
+|	VisualEffect	|	[高斯模糊原理、以及如何使用UIVisualEffectView实现模糊效果](https://github.com/pro648/tips/blob/master/sources/%E9%AB%98%E6%96%AF%E6%A8%A1%E7%B3%8A%E5%8E%9F%E7%90%86%E3%80%81%E4%BB%A5%E5%8F%8A%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8UIVisualEffectView%E5%AE%9E%E7%8E%B0%E6%A8%A1%E7%B3%8A%E6%95%88%E6%9E%9C.md)	|
 |WebKit的使用|[WebKit的使用](https://github.com/pro648/tips/wiki/WebKit的使用)|
 | Widget					| [Today Extension(widget)的使用](https://github.com/pro648/tips/wiki/Today-Extension(widget)%E7%9A%84%E4%BD%BF%E7%94%A8) |
 | copy&mutableCopy          | [深复制、浅复制、copy、mutableCopy](https://github.com/pro648/tips/wiki/%E6%B7%B1%E5%A4%8D%E5%88%B6%E3%80%81%E6%B5%85%E5%A4%8D%E5%88%B6%E3%80%81copy%E3%80%81mutableCopy) |
