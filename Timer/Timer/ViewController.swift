@@ -29,6 +29,13 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
         
         navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(presentAlertController(_:)))
+        
+        DispatchQueue.global(qos: .userInteractive).async {
+            // 添加到全局队列当前线程，由于当前线程没有runloop，下面计时器不会触发。
+            Timer.scheduledTimer(withTimeInterval: 1.0, repeats: true) { (timer) in
+                print(timer.fireDate.description)
+            }
+        }
     }
 }
 
