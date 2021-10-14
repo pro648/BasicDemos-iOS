@@ -23,6 +23,7 @@ iOS学习进程中的demo汇总
 | CoreGraphics-1 | [CoreGraphics系列一：path](https://github.com/pro648/tips/blob/master/sources/CoreGraphics%E7%B3%BB%E5%88%97%E4%B8%80%EF%BC%9Apath.md) |
 | CoreGraphics-2 | [CoreGraphics系列二：gradient和context](https://github.com/pro648/tips/blob/master/sources/CoreGraphics%E7%B3%BB%E5%88%97%E4%BA%8C%EF%BC%9Agradient%E5%92%8Ccontext.md) |
 | CoreGraphics-2模版 | [CoreGraphics系列二：gradient和context](https://github.com/pro648/tips/blob/master/sources/CoreGraphics%E7%B3%BB%E5%88%97%E4%BA%8C%EF%BC%9Agradient%E5%92%8Ccontext.md) |
+| CoreGraphics-3 | [CoreGraphics系列三：pattern和transparency layer](https://github.com/pro648/tips/blob/master/sources/CoreGraphics%E7%B3%BB%E5%88%97%E4%B8%89%EF%BC%9Apattern%E5%92%8Ctransparency%20layer.md) |
 | Delegation&Notification   | [委托、通知传值的用法与区别](https://github.com/pro648/tips/wiki/%E5%A7%94%E6%89%98%E3%80%81%E9%80%9A%E7%9F%A5%E4%BC%A0%E5%80%BC%E7%9A%84%E7%94%A8%E6%B3%95%E4%B8%8E%E5%8C%BA%E5%88%AB) |
 | Delegation&Notification模板 | [委托、通知传值的用法与区别](https://github.com/pro648/tips/wiki/%E5%A7%94%E6%89%98%E3%80%81%E9%80%9A%E7%9F%A5%E4%BC%A0%E5%80%BC%E7%9A%84%E7%94%A8%E6%B3%95%E4%B8%8E%E5%8C%BA%E5%88%AB)博文模板 |
 |DisplayViewController|[View Controller 转场](https://github.com/pro648/tips/wiki/View%20Controller%20%E8%BD%AC%E5%9C%BA)|
