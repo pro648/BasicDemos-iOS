@@ -36,7 +36,9 @@ class ViewController: UIViewController {
         items = [
             Item(title: "事件传递顺序", clsNameStr: NSStringFromClass(FindResponderVC.self)),
             Item(title: "增大按钮点击区域", clsNameStr: NSStringFromClass(ButtonViewController.self)),
-            Item(title: "Cell 事件统一路由至控制器处理", clsNameStr: NSStringFromClass(RouterEventVC.self))
+            Item(title: "Cell 事件统一路由至控制器处理", clsNameStr: NSStringFromClass(RouterEventVC.self)),
+            Item(title: "可点击区域为三角形", clsNameStr: NSStringFromClass(TriangleViewController.self)),
+            Item(title: "动画过程中响应手势", clsNameStr: NSStringFromClass(AnimationViewController.self))
         ]
     }
 }

@@ -32,6 +32,10 @@
 		0DFCA8DC251C8B82002B0A95 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0DFCA8DB251C8B82002B0A95 /* Assets.xcassets */; };
 		0DFCA8DF251C8B82002B0A95 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0DFCA8DD251C8B82002B0A95 /* LaunchScreen.storyboard */; };
 		0DFCA8EA251C986F002B0A95 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DFCA8E9251C986F002B0A95 /* Item.swift */; };
+		603F9A0C27CD25520058FBE6 /* AnimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 603F9A0B27CD25520058FBE6 /* AnimationViewController.swift */; };
+		603F9A0E27CD26530058FBE6 /* AnimatedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 603F9A0D27CD26530058FBE6 /* AnimatedView.swift */; };
+		60D4CEED27C7AC69001DEECA /* TriangleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60D4CEEC27C7AC69001DEECA /* TriangleViewController.swift */; };
+		60D4CEEF27C7AC82001DEECA /* TriangleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60D4CEEE27C7AC82001DEECA /* TriangleView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -62,6 +66,10 @@
 		0DFCA8DE251C8B82002B0A95 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0DFCA8E0251C8B82002B0A95 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0DFCA8E9251C986F002B0A95 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		603F9A0B27CD25520058FBE6 /* AnimationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationViewController.swift; sourceTree = "<group>"; };
+		603F9A0D27CD26530058FBE6 /* AnimatedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedView.swift; sourceTree = "<group>"; };
+		60D4CEEC27C7AC69001DEECA /* TriangleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TriangleViewController.swift; sourceTree = "<group>"; };
+		60D4CEEE27C7AC82001DEECA /* TriangleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TriangleView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,20 +140,40 @@
 			isa = PBXGroup;
 			children = (
 				0DFCA8D2251C8B7C002B0A95 /* AppDelegate.swift */,
+				0D5540DE251DEE7900DAFFAD /* Hit-TestingImplementation.swift */,
+				0DFCA8E9251C986F002B0A95 /* Item.swift */,
+				0D5540D3251D90FF00DAFFAD /* MethodSwizzling.swift */,
 				0DFCA8D4251C8B7C002B0A95 /* SceneDelegate.swift */,
 				0DFCA8D6251C8B7C002B0A95 /* ViewController.swift */,
+				603F9A0A27CD25360058FBE6 /* Animation */,
 				0D5540E2251DF18200DAFFAD /* FindFirstResponder */,
 				0D81A1FC252064E4001F226C /* HitTestSlop */,
 				0D81A1FE25206768001F226C /* RouterEvent */,
-				0D5540DE251DEE7900DAFFAD /* Hit-TestingImplementation.swift */,
-				0D5540D3251D90FF00DAFFAD /* MethodSwizzling.swift */,
-				0DFCA8E9251C986F002B0A95 /* Item.swift */,
-				0DFCA8D8251C8B7C002B0A95 /* Main.storyboard */,
+				60D4CEEB27C7AC52001DEECA /* Trangle */,
 				0DFCA8DB251C8B82002B0A95 /* Assets.xcassets */,
-				0DFCA8DD251C8B82002B0A95 /* LaunchScreen.storyboard */,
 				0DFCA8E0251C8B82002B0A95 /* Info.plist */,
+				0DFCA8DD251C8B82002B0A95 /* LaunchScreen.storyboard */,
+				0DFCA8D8251C8B7C002B0A95 /* Main.storyboard */,
 			);
 			path = ResponderChain;
+			sourceTree = "<group>";
+		};
+		603F9A0A27CD25360058FBE6 /* Animation */ = {
+			isa = PBXGroup;
+			children = (
+				603F9A0B27CD25520058FBE6 /* AnimationViewController.swift */,
+				603F9A0D27CD26530058FBE6 /* AnimatedView.swift */,
+			);
+			path = Animation;
+			sourceTree = "<group>";
+		};
+		60D4CEEB27C7AC52001DEECA /* Trangle */ = {
+			isa = PBXGroup;
+			children = (
+				60D4CEEC27C7AC69001DEECA /* TriangleViewController.swift */,
+				60D4CEEE27C7AC82001DEECA /* TriangleView.swift */,
+			);
+			path = Trangle;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -219,6 +247,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				60D4CEED27C7AC69001DEECA /* TriangleViewController.swift in Sources */,
 				0D5540E8251DF1A900DAFFAD /* ViewA1.swift in Sources */,
 				0D5540EB251DF1B300DAFFAD /* ViewA2.swift in Sources */,
 				0D5540DF251DEE7900DAFFAD /* Hit-TestingImplementation.swift in Sources */,
@@ -230,10 +259,13 @@
 				0D5540FD251DF1EC00DAFFAD /* ViewC2.swift in Sources */,
 				0D81A1F025203D19001F226C /* HitTestSlop.swift in Sources */,
 				0D81A207252070B7001F226C /* Router.swift in Sources */,
+				603F9A0E27CD26530058FBE6 /* AnimatedView.swift in Sources */,
 				0D5540EE251DF1C200DAFFAD /* ViewB.swift in Sources */,
 				0D81A1F4252062D1001F226C /* ButtonViewController.swift in Sources */,
 				0DFCA8D7251C8B7C002B0A95 /* ViewController.swift in Sources */,
+				603F9A0C27CD25520058FBE6 /* AnimationViewController.swift in Sources */,
 				0D5540D4251D90FF00DAFFAD /* MethodSwizzling.swift in Sources */,
+				60D4CEEF27C7AC82001DEECA /* TriangleView.swift in Sources */,
 				0D81A20025206849001F226C /* RouterEventVC.swift in Sources */,
 				0D5540F4251DF1D300DAFFAD /* ViewB2.swift in Sources */,
 				0D5540F1251DF1CC00DAFFAD /* ViewB1.swift in Sources */,
@@ -387,7 +419,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 6GTWBXFMR4;
+				DEVELOPMENT_TEAM = WJZF59QWRZ;
 				INFOPLIST_FILE = ResponderChain/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -406,7 +438,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 6GTWBXFMR4;
+				DEVELOPMENT_TEAM = WJZF59QWRZ;
 				INFOPLIST_FILE = ResponderChain/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

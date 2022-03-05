@@ -46,16 +46,16 @@ extension UIView{
         print(NSStringFromClass(type(of: self)) + "  " + #function)
         let result = pr_hitTest(point, with: event)
         if result != nil {
-            print((NSStringFromClass(type(of: self))) + " hitTesting return:" + NSStringFromClass(type(of: result!)))
+            print((NSStringFromClass(type(of: self))) + " pr_hitTesting return:" + NSStringFromClass(type(of: result!)))
         }
         
         return result
     }
     
     @objc public func pr_point(inside point: CGPoint, with event: UIEvent?) -> Bool {
-        print(NSStringFromClass(type(of: self)) + " --- pointInside")
+        print(NSStringFromClass(type(of: self)) + " --- pr_pointInside")
         let result = pr_point(inside: point, with: event)
-        print(NSStringFromClass(type(of: self)) + " pointInside +++ return: \(result)")
+        print(NSStringFromClass(type(of: self)) + " pr_pointInside +++ return: \(result)")
         return result
     }
 }
