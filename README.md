@@ -37,6 +37,7 @@ iOS学习进程中的demo汇总
 |	KVC&KVO原理	|	[KVC、KVO的本质](https://github.com/pro648/tips/blob/master/sources/KVC、KVO的本质.md)	|
 | KeyedArchiver             | [数据存储之归档解档 NSKeyedArchiver NSKeyedUnarchiver](https://github.com/pro648/tips/wiki/%E6%95%B0%E6%8D%AE%E5%AD%98%E5%82%A8%E4%B9%8B%E5%BD%92%E6%A1%A3%E8%A7%A3%E6%A1%A3-NSKeyedArchiver-NSKeyedUnarchiver) |
 | LinkedList	| [链表 LinkedList](https://github.com/pro648/tips/blob/master/sources/%E9%93%BE%E8%A1%A8%20LinkedList.md)	|
+| LiskovSubstitutionPrinciple | [里氏替换原则](https://github.com/pro648/tips/blob/master/sources/%E9%87%8C%E6%B0%8F%E6%9B%BF%E6%8D%A2%E5%8E%9F%E5%88%99.md) |
 | MementoPattern	| [备忘录模式 Memento Pattern](https://github.com/pro648/tips/wiki/%E5%A4%87%E5%BF%98%E5%BD%95%E6%A8%A1%E5%BC%8F-Memento-Pattern)|
 | Model-View-ModelView | [MVVM设计模式](https://github.com/pro648/tips/wiki/MVVM%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F)playground |
 | MVVMPattern | [MVVM设计模式](https://github.com/pro648/tips/wiki/MVVM%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F) |
