@@ -32,6 +32,7 @@ iOS学习进程中的demo汇总
 |GrandCentralDispatch模板    | [Grand Central Dispatch的使用](https://github.com/pro648/tips/wiki/Grand-Central-Dispatch%E7%9A%84%E4%BD%BF%E7%94%A8)文章模板 |
 | GestureRecognizer         | [手势控制：点击、滑动、平移、捏合、旋转、长按、轻扫](https://github.com/pro648/tips/wiki/%E6%89%8B%E5%8A%BF%E6%8E%A7%E5%88%B6%EF%BC%9A%E7%82%B9%E5%87%BB%E3%80%81%E6%BB%91%E5%8A%A8%E3%80%81%E5%B9%B3%E7%A7%BB%E3%80%81%E6%8D%8F%E5%90%88%E3%80%81%E6%97%8B%E8%BD%AC%E3%80%81%E9%95%BF%E6%8C%89%E3%80%81%E8%BD%BB%E6%89%AB) |
 | ImageResizing | [图像下采样](https://github.com/pro648/tips/blob/master/sources/%E5%9B%BE%E5%83%8F%E4%B8%8B%E9%87%87%E6%A0%B7.md) |
+| InterfaceSegregationPrinciple | [接口隔离原则](https://github.com/pro648/tips/blob/master/sources/%E6%8E%A5%E5%8F%A3%E9%9A%94%E7%A6%BB%E5%8E%9F%E5%88%99.md) |
 | IteratorPattern	| [迭代器模式 Iterator Pattern](https://github.com/pro648/tips/wiki/%E8%BF%AD%E4%BB%A3%E5%99%A8%E6%A8%A1%E5%BC%8F-Iterator-Pattern)	|
 | KVC&KVODemo               | [KVC和KVO学习笔记](https://github.com/pro648/tips/wiki/KVC%E5%92%8CKVO%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0) |
 |	KVC&KVO原理	|	[KVC、KVO的本质](https://github.com/pro648/tips/blob/master/sources/KVC、KVO的本质.md)	|
