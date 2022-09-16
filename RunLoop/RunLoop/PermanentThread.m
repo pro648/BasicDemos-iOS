@@ -135,6 +135,9 @@
     if (!self.innerThread) {
         return;
     }
+    if (![self.innerThread isExecuting]) {
+        return;
+    }
     
     [self performSelector:@selector(_stop) onThread:self.innerThread withObject:NULL waitUntilDone:YES];
 }
