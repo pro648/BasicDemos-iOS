@@ -44,6 +44,7 @@ iOS学习进程中的demo汇总
 | Model-View-ModelView | [MVVM设计模式](https://github.com/pro648/tips/wiki/MVVM%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F)playground |
 | MVVMPattern | [MVVM设计模式](https://github.com/pro648/tips/wiki/MVVM%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F) |
 | MVVMPattern模式 | [MVVM设计模式](https://github.com/pro648/tips/wiki/MVVM%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F)文章模版 |
+| NSCache | [NSCache的使用](https://github.com/pro648/tips/blob/master/sources/NSCache%E7%9A%84%E4%BD%BF%E7%94%A8.md) |
 | NSURLSession1             | [NSURLSession的使用](https://github.com/pro648/tips/wiki/NSURLSession%E7%9A%84%E4%BD%BF%E7%94%A8%EF%BC%88%E4%B8%80%EF%BC%89) |
 | Open-ClosedPrinciple | [开闭原则](https://github.com/pro648/tips/blob/master/sources/%E5%BC%80%E9%97%AD%E5%8E%9F%E5%88%99.md) |
 |	Operation&OperationQueue	|	[Operation、OperationQueue的使用](https://github.com/pro648/tips/wiki/Operation%E3%80%81OperationQueue%E7%9A%84%E4%BD%BF%E7%94%A8)	|
