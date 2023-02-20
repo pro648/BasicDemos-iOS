@@ -68,6 +68,7 @@ iOS学习进程中的demo汇总
 |	Stack	|	[栈 Stack](https://github.com/pro648/tips/blob/master/sources/%E6%A0%88%20Stack.md)	|
 | StackView                 | [Auto Layout中Stack View的使用](https://github.com/pro648/tips/wiki/Auto-Layout%E4%B8%ADStack-View%E7%9A%84%E4%BD%BF%E7%94%A8) |
 | StrategyPattern	|	[策略模式 Strategy Pattern](https://github.com/pro648/tips/wiki/%E7%AD%96%E7%95%A5%E6%A8%A1%E5%BC%8F-Design-Pattern)	|
+| Swift指针的使用 | [Swift指针的使用](https://github.com/pro648/tips/blob/master/sources/Swift%E6%8C%87%E9%92%88%E7%9A%84%E4%BD%BF%E7%94%A8.md) |
 | Synchronization	| 并发控制方案的[系列文章](https://github.com/pro648/tips/wiki/%E7%BA%BF%E7%A8%8B%E5%90%8C%E6%AD%A5%E4%B9%8B%E8%87%AA%E6%97%8B%E9%94%81)	|
 |	Timer	|	[Timer的使用](https://github.com/pro648/tips/wiki/Timer%E7%9A%84%E4%BD%BF%E7%94%A8)		|
 |	Timer模版	|	[Timer的使用](https://github.com/pro648/tips/wiki/Timer%E7%9A%84%E4%BD%BF%E7%94%A8)		|
