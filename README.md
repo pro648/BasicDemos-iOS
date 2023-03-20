@@ -52,6 +52,7 @@ iOS学习进程中的demo汇总
 |PasswordAutoFill	|	[Password AutoFill 的使用](https://github.com/pro648/tips/wiki/Password%20AutoFill%20%E7%9A%84%E4%BD%BF%E7%94%A8)	|
 |PasswordAutoFill模版	|[Password AutoFill 的使用](https://github.com/pro648/tips/wiki/Password%20AutoFill%20%E7%9A%84%E4%BD%BF%E7%94%A8)文章模版	|
 | Persistence               | [使用偏好设置、属性列表、归档解档保存数据、恢复数据](https://github.com/pro648/tips/wiki/使用偏好设置、属性列表、归档解档保存数据、恢复数据) |
+| ProtocolAndGeneric | [协议、泛型和Existential Container](https://github.com/pro648/tips/blob/master/sources/%E5%8D%8F%E8%AE%AE%E3%80%81%E6%B3%9B%E5%9E%8B%E5%92%8CExistential%20Container.md) |
 | PropertyAnimator          | [UIViewPropertyAnimator的使用](https://github.com/pro648/tips/wiki/UIViewPropertyAnimator%E7%9A%84%E4%BD%BF%E7%94%A8) |
 |	ProtocolOrientedProgramming	|	[面向协议编程](https://github.com/pro648/tips/blob/master/sources/%E9%9D%A2%E5%90%91%E5%8D%8F%E8%AE%AE%E7%BC%96%E7%A8%8B.md)	|
 | PrototypePattern | [原型模式 Prototype Pattern](https://github.com/pro648/tips/wiki/%E5%8E%9F%E5%9E%8B%E6%A8%A1%E5%BC%8F-Prototype-Pattern)	|
