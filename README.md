@@ -11,6 +11,7 @@ iOS学习进程中的demo汇总
 |	AdapterPattern	|	[适配器模式 Adapter Pattern](https://github.com/pro648/tips/wiki/%E9%80%82%E9%85%8D%E5%99%A8%E6%A8%A1%E5%BC%8F-Adapter-Pattern)	|
 | AlertController           | [UIAlertController的使用方法](https://github.com/pro648/tips/wiki/UIAlertController%E7%9A%84%E4%BD%BF%E7%94%A8) |
 |	AssociatedObject	|	[关联对象 Associated Object 的本质](https://github.com/pro648/tips/blob/master/sources/%E5%85%B3%E8%81%94%E5%AF%B9%E8%B1%A1%20Associated%20Object%20%E7%9A%84%E6%9C%AC%E8%B4%A8.md)	|
+| Autoclosure | [@autoclosure的使用](https://github.com/pro648/tips/blob/master/sources/@autoclosure%E7%9A%84%E4%BD%BF%E7%94%A8.md) |
 | AutoLayout                | [Auto Layout的使用](https://github.com/pro648/tips/wiki/Auto-Layout%E7%9A%84%E4%BD%BF%E7%94%A8) |
 |	BinarySearch	|	[二分查找 Binary Search](https://github.com/pro648/tips/blob/master/sources/%E4%BA%8C%E5%88%86%E6%9F%A5%E6%89%BE%20Binary%20Search.md)	|
 |	BinarySearchTree	|	[二叉搜索树 Binary Search Tree](https://github.com/pro648/tips/blob/master/sources/%E4%BA%8C%E5%8F%89%E6%90%9C%E7%B4%A2%E6%A0%91%20Binary%20Search%20Tree.md)	|
